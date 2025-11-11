@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quiz PTIK Interaktif</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Quiz PTIK Interaktif</h1>
+    <p class="subtitle">50 Soal Pilihan Ganda – Dapatkan umpan balik langsung</p>
+  </header>
+  <main id="app" class="app">
+    <section id="intro" class="panel active">
+      <h2>Selamat Datang 👋</h2>
+      <p>Jawablah setiap soal. Jika jawaban salah, akan muncul koreksi dan penjelasan. Anda bisa meninjau kembali soal yang sudah dijawab.</p>
+      <ul class="features">
+        <li>Umpan balik instan</li>
+        <li>Progress bar & skor langsung</li>
+        <li>Mode tinjau jawaban</li>
+        <li>Penyimpanan lokal (lanjutkan nanti)</li>
+      </ul>
+      <button id="startBtn" class="btn primary">Mulai Quiz</button>
+    </section>
+
+    <section id="quiz" class="panel">
+      <div class="top-bar">
+        <div class="progress-wrapper">
+          <div id="progressBar" class="progress-bar"><span id="progressFill"></span></div>
+          <div id="progressText" class="progress-text">Soal 1 / 50</div>
+        </div>
+        <div class="score-wrapper">Skor: <span id="score">0</span></div>
+      </div>
+
+      <div id="questionContainer" class="question-container" aria-live="polite"></div>
+
+      <div class="nav-buttons">
+        <button id="prevBtn" class="btn" disabled>Sebelumnya</button>
+        <button id="nextBtn" class="btn" disabled>Berikutnya</button>
+        <button id="reviewToggle" class="btn outline" disabled>Mode Tinjau: OFF</button>
+      </div>
+    </section>
+
+    <section id="summary" class="panel">
+      <h2>Ringkasan Hasil</h2>
+      <p id="finalScore"></p>
+      <div id="reviewList" class="review-list"></div>
+      <button id="restartBtn" class="btn">Ulangi Quiz</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; 2025 Quiz PTIK Interaktif. Data soal dapat Anda sesuaikan dari file <code>questions.js</code>.</small>
+  </footer>
+
+  <script src="questions.js"></script>
+  <script src="quiz.js"></script>
+</body>
+</html>
