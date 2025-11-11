@@ -143,14 +143,8 @@
     save();
     render();
 
-    // Auto-advance after a short delay except on last question
-    if(state.index < TOTAL-1){
-      nextBtn.disabled = false;
-      setTimeout(() => { goNext(); }, 600);
-    } else {
-      // show summary after short pause
-      setTimeout(() => { showSummary(); }, 700);
-    }
+    // Enable next button so user can read explanation before moving on
+    nextBtn.disabled = false;
   }
 
   function goPrev(){
