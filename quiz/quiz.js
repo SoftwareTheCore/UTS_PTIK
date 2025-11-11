@@ -246,4 +246,33 @@
   });
   restartBtn.addEventListener('click', restart);
 
+  // Modal PDF Materi
+  const materiBtn = document.getElementById('materiBtn');
+  const materiModal = document.getElementById('materiModal');
+  const closeModal = document.querySelector('.close');
+
+  if(materiBtn && materiModal && closeModal) {
+    materiBtn.addEventListener('click', () => {
+      materiModal.classList.add('active');
+    });
+
+    closeModal.addEventListener('click', () => {
+      materiModal.classList.remove('active');
+    });
+
+    // Close when clicking outside modal content
+    materiModal.addEventListener('click', (e) => {
+      if(e.target === materiModal) {
+        materiModal.classList.remove('active');
+      }
+    });
+
+    // Close with Escape key
+    document.addEventListener('keydown', (e) => {
+      if(e.key === 'Escape' && materiModal.classList.contains('active')) {
+        materiModal.classList.remove('active');
+      }
+    });
+  }
+
 })();
