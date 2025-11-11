@@ -1,421 +1,687 @@
-// 50 Soal PTIK Interaktif
-// Catatan: Konten disusun berdasarkan topik umum PTIK (hardware, software, OS, jaringan, etika, TIK perkantoran, algoritma, multimedia, cloud/email).
-// Silakan sesuaikan agar persis mengikuti materi pada PDF di folder assets.
+// 50 Soal PTIK Interaktif - SESUAI LAMPIRAN
+// Catatan: Semua soal diambil langsung dari materi Pertemuan 1-7 yang diberikan
 
 const QUESTIONS = [
-  // 1-8 Dasar Komputer: Hardware/Software
+  // 1-5: Dasar Komputer & TI (Pertemuan 1)
   {
     id: 1,
     category: "Dasar Komputer",
-    question: "Perangkat yang berfungsi mengolah data menjadi informasi disebut…",
-    options: ["Perangkat input", "Perangkat proses", "Perangkat output", "Perangkat penyimpanan"],
-    answer: 1,
-    explanation: "Unit pemroses (CPU) adalah 'otak' komputer yang mengolah data menjadi informasi. <br><br><strong>🧠 Analogi:</strong> Bayangkan CPU seperti seorang chef di dapur. Input (bahan mentah) datang dari perangkat input (keyboard, mouse), lalu chef (CPU) mengolah bahan tersebut menjadi hidangan lezat (informasi), kemudian disajikan melalui perangkat output (monitor, printer). CPU terdiri dari ALU (Arithmetic Logic Unit) yang melakukan perhitungan seperti chef memotong dan memasak, serta CU (Control Unit) yang mengatur alur kerja seperti chef mengatur resep dan timing masakan."
+    question: "Teknologi Informasi menurut Akhmad Fauzi adalah…",
+    options: [
+      "Teknologi yang memanfaatkan komputer sebagai perangkat utama untuk mengolah data menjadi informasi",
+      "Seperangkat alat yang membantu bekerja dengan informasi",
+      "Teknologi yang menggabungkan komputasi dengan jalur komunikasi",
+      "Cabang pengetahuan yang berhubungan dengan penciptaan sarana teknis"
+    ],
+    answer: 0,
+    explanation: "Berdasarkan Pertemuan 1: 'Teknologi Informasi menurut Akhmad Fauzi: Teknologi Informasi adalah teknologi yang memanfaatkan computer sebagai perangkat utama untuk mengolah data menjadi informasi yang bermanfaat.'"
   },
   {
     id: 2,
     category: "Dasar Komputer",
-    question: "Manakah yang termasuk perangkat input?",
-    options: ["Monitor", "Printer", "Keyboard", "Speaker"],
+    question: "Menurut Martin, Teknologi Informasi mencakup…",
+    options: [
+      "Hanya perangkat keras komputer",
+      "Hanya perangkat lunak komputer", 
+      "Komputer dan teknologi komunikasi",
+      "Hanya jaringan internet"
+    ],
     answer: 2,
-    explanation: "Keyboard adalah perangkat input yang memasukkan data/teks ke komputer. <br><br><strong>⌨️ Analogi:</strong> Pikirkan komputer seperti rumah. Perangkat INPUT adalah 'pintu masuk' - keyboard untuk memasukkan teks, mouse untuk memasukkan perintah klik, microphone untuk memasukkan suara. Sedangkan perangkat OUTPUT adalah 'pintu keluar' - monitor menampilkan gambar keluar, printer mengeluarkan kertas, speaker mengeluarkan suara. Jadi keyboard adalah pintu masuk data, bukan pintu keluar!"
+    explanation: "Berdasarkan Pertemuan 1: 'Teknologi Informasi Menurut Martin: Teknologi informasi tidak hanya terbatas pada teknologi komputer (perangkat keras dan perangkat lunak) yang digunakan untuk memproses dan menyimpan informasi, melainkan juga mencakup teknologi komunikasi untuk mengirimkan informasi.'"
   },
   {
     id: 3,
     category: "Dasar Komputer",
-    question: "ROM pada komputer bersifat…",
-    options: ["Dapat ditulis ulang bebas", "Hanya-baca (non-volatile)", "Mudah hilang jika listrik padam", "Penyimpanan eksternal"],
-    answer: 1,
-    explanation: "ROM (Read-Only Memory) menyimpan firmware dan BIOS, bersifat non-volatile (permanen) dan umumnya hanya-baca. <br><br><strong>📚 Analogi:</strong> ROM seperti buku yang sudah dicetak dan tidak bisa diubah lagi. Bayangkan ROM seperti 'buku panduan pabrik' komputer yang berisi instruksi dasar untuk menghidupkan sistem. Berbeda dengan RAM yang seperti papan tulis (bisa dihapus dan ditulis ulang, tapi hilang saat listrik mati), ROM seperti buku yang tetap ada isinya meski tidak ada listrik. Itulah mengapa komputer Anda tetap 'ingat' cara booting meski dicabut dari listrik berhari-hari!"
+    question: "Komputer yang digunakan untuk mengolah data kualitatif dan kuantitatif adalah…",
+    options: [
+      "Komputer Analog",
+      "Komputer Digital", 
+      "Komputer Hibrid",
+      "Komputer Mini"
+    ],
+    answer: 2,
+    explanation: "Berdasarkan Pertemuan 1: 'Komputer Hibrid (Hybrid Computer), Komputer hybrid adalah kombinasi antara komputer analog dengan komputer digital, sehingga komputer jenis ini dapat melakukan pengolahan data kualitatif dan kuantitatif.'"
   },
   {
     id: 4,
     category: "Dasar Komputer",
-    question: "Satuan kecepatan CPU yang umum digunakan saat ini adalah…",
-    options: ["Mbps", "GHz", "MB", "dpi"],
-    answer: 1,
-    explanation: "Kecepatan prosesor diukur dalam Hertz (Hz), yang menunjukkan berapa banyak siklus per detik. Saat ini umumnya menggunakan GigaHertz (GHz) = miliaran siklus per detik. <br><br><strong>⚡ Analogi:</strong> GHz seperti detak jantung komputer. Bayangkan CPU dengan kecepatan 3 GHz seperti jantung yang berdetak 3 MILIAR kali per detik! Setiap detak adalah satu siklus pemrosesan instruksi. Semakin tinggi GHz, semakin cepat CPU bekerja. <br><br>Perbandingan satuan: <br>• GHz (GigaHertz) = kecepatan CPU ⚡<br>• Mbps (Megabit per second) = kecepatan internet 🌐<br>• MB (MegaByte) = kapasitas penyimpanan 💾<br>• dpi (dots per inch) = resolusi printer 🖨️"
+    question: "Generasi komputer pertama menggunakan teknologi…",
+    options: [
+      "Transistor",
+      "IC (Integrated Circuit)", 
+      "Tabung Hampa",
+      "Microprocessor"
+    ],
+    answer: 2,
+    explanation: "Berdasarkan Pertemuan 1: 'Generasi Ke - 1 (1945 - 1959) Ciri - cirinya : Menggunakan tabung hampa (electronic vacuum tubes)'"
   },
   {
     id: 5,
-    category: "Dasar Komputer",
-    question: "Perangkat penyimpanan yang paling cepat di antara berikut adalah…",
-    options: ["HDD", "SSD SATA", "SSD NVMe", "DVD"],
+    category: "Dasar Komputer", 
+    question: "Komputer komersial pertama yang dijual ke Biro Sensus AS adalah…",
+    options: [
+      "ENIAC",
+      "MARK I", 
+      "UNIVAC I",
+      "EDSAC"
+    ],
     answer: 2,
-    explanation: "SSD NVMe menggunakan jalur PCIe dengan bandwidth lebih tinggi dibanding SATA, mencapai kecepatan hingga 7000 MB/s! <br><br><strong>🏎️ Analogi:</strong> Bayangkan penyimpanan data seperti sistem transportasi:<br><br>• <strong>DVD</strong> = Sepeda 🚲 (sangat lambat, 10 MB/s)<br>• <strong>HDD</strong> = Mobil 🚗 (lumayan, 100-150 MB/s, tapi ada bagian bergerak/mekanik yang bisa aus)<br>• <strong>SSD SATA</strong> = Motor sport 🏍️ (cepat, 500 MB/s, full elektronik)<br>• <strong>SSD NVMe</strong> = Jet supersonik ✈️ (super cepat, 3000-7000 MB/s, langsung terhubung ke jalur PCIe seperti runway khusus!)<br><br>NVMe tidak perlu antri di jalur SATA yang lebih lambat, langsung 'terbang' lewat jalur express PCIe!"
+    explanation: "Berdasarkan Pertemuan 1: 'UNIVAC I (Universal Automatic Computer) --> komputer komersial pertama yang dijual kepada Biro Sensus AS.'"
   },
+
+  // 6-10: Teknologi Komunikasi (Pertemuan 2)
   {
     id: 6,
-    category: "Dasar Komputer",
-    question: "Software yang mengatur seluruh sumber daya perangkat keras adalah…",
-    options: ["Driver perangkat", "Sistem operasi", "Aplikasi perkantoran", "Firmware"],
-    answer: 1,
-    explanation: "Sistem operasi (OS) adalah 'manajer agung' yang mengelola semua hardware, file, proses, memori, dan antarmuka pengguna. <br><br><strong>👔 Analogi:</strong> OS seperti direktur sebuah perusahaan besar. Bayangkan komputer adalah gedung perusahaan:<br><br>• <strong>OS (Windows/Linux)</strong> = Direktur yang mengatur semua divisi<br>• <strong>Driver</strong> = Supervisor khusus untuk satu departemen (misal: driver printer hanya urus printer)<br>• <strong>Firmware</strong> = SOP dasar pabrik yang sudah tertanam<br>• <strong>Aplikasi</strong> = Karyawan yang melakukan pekerjaan spesifik<br><br>Tanpa direktur (OS), karyawan (aplikasi) tidak tahu bagaimana menggunakan fasilitas perusahaan (hardware). OS membuat semua komponen bekerja harmonis!"
+    category: "Teknologi Komunikasi",
+    question: "Istilah komunikasi berasal dari kata Latin 'Communis' yang berarti…",
+    options: [
+      "Berbicara",
+      "Mendengarkan", 
+      "Membuat kebersamaan",
+      "Menulis"
+    ],
+    answer: 2,
+    explanation: "Berdasarkan Pertemuan 2: 'Istilah Komunikasi berpangkal pada perkataan latin Communis yang artinya membuat kebersamaan atau membangun kebersamaan antara dua orang atau lebih.'"
   },
   {
     id: 7,
-    category: "Dasar Komputer",
-    question: "Contoh perangkat output adalah…",
-    options: ["Mouse", "Scanner", "Monitor", "Webcam"],
-    answer: 2,
-    explanation: "Monitor menampilkan informasi (output) dari komputer ke pengguna. <br><br><strong>🎭 Analogi:</strong> Bayangkan komputer sebagai teater:<br><br><strong>INPUT (Masuk ke panggung):</strong><br>• Mouse = Sutradara yang memberi instruksi<br>• Scanner = Kamera yang merekam adegan<br>• Webcam = Kamera yang merekam aktor<br>• Keyboard = Penulis naskah<br><br><strong>OUTPUT (Keluar dari panggung ke penonton):</strong><br>• Monitor = Layar bioskop yang menampilkan film 🎬<br>• Speaker = Sistem audio yang mengeluarkan suara 🔊<br>• Printer = Booth yang mencetak poster 🖨️<br><br>Monitor adalah 'jendela' kita untuk melihat apa yang terjadi di dalam komputer!"
+    category: "Teknologi Komunikasi",
+    question: "Proses komunikasi tanpa media yang memanipulasi jumlah penerima disebut…",
+    options: [
+      "Proses Sekunder",
+      "Proses Primer", 
+      "Proses Tertier",
+      "Proses Kuarter"
+    ],
+    answer: 1,
+    explanation: "Berdasarkan Pertemuan 2: 'Proses primer adalah proses komunikasi langsung tanpa adanya media yang dapat memanipulasi dan melipatgandakan jumlah penerima pesan.'"
   },
   {
     id: 8,
-    category: "Dasar Komputer",
-    question: "Yang bukan sistem operasi adalah…",
-    options: ["Windows", "Linux", "Android", "Photoshop"],
-    answer: 3,
-    explanation: "Photoshop adalah aplikasi pengolah gambar, bukan sistem operasi. <br><br><strong>🏢 Analogi:</strong> Bayangkan gedung apartemen:<br><br><strong>SISTEM OPERASI</strong> = Infrastruktur gedung (listrik, air, lift, keamanan)<br>• Windows = Apartemen modern dengan lift otomatis<br>• Linux = Apartemen open-source yang bisa direnovasi sendiri<br>• Android = Apartemen mobile yang bisa dibawa kemana-mana<br><br><strong>APLIKASI</strong> = Penghuni apartemen yang tinggal di gedung<br>• Photoshop = Penghuni yang suka edit foto<br>• Word = Penghuni yang suka menulis<br>• Chrome = Penghuni yang suka browsing<br><br>Tanpa gedung (OS), penghuni (aplikasi) tidak bisa hidup. Photoshop BUTUH Windows/Mac/Linux untuk berjalan!"
+    category: "Teknologi Komunikasi",
+    question: "Tahap INISIASI dalam proses penerapan teknologi komunikasi mencakup…",
+    options: [
+      "Menggunakan teknologi langsung",
+      "Mengumpulkan informasi tentang teknologi dan merencanakan adopsinya", 
+      "Menghapus teknologi lama",
+      "Membeli hardware"
+    ],
+    answer: 1,
+    explanation: "Berdasarkan Pertemuan 2: 'Tahapan inisiasi, usaha untuk mengumpulkan informasi tentang teknologi komunikasi, memahami dengan seksama dan merencanakannya untuk mengadopsinya.'"
   },
-
-  // 9-14 Sistem Operasi & Manajemen File
   {
     id: 9,
-    category: "Sistem Operasi",
-    question: "Ekstensi file dokumen Microsoft Word modern adalah…",
-    options: [".doc", ".docx", ".xlsx", ".ppt"],
-    answer: 1,
-    explanation: ".docx adalah format Word modern berbasis XML yang diperkenalkan sejak Office 2007. <br><br><strong>🏷️ Analogi:</strong> Ekstensi file seperti label pada kemasan makanan yang menunjukkan isinya:<br><br>• <strong>.docx</strong> = Kardus bertulisan 'WORD' (dokumen teks) 📝<br>• <strong>.doc</strong> = Kardus 'WORD' model lama (masih bisa dibaca tapi jadul)<br>• <strong>.xlsx</strong> = Kardus 'EXCEL' (spreadsheet/tabel) 📊<br>• <strong>.pptx</strong> = Kardus 'POWERPOINT' (presentasi) 🎨<br>• <strong>.pdf</strong> = Kardus yang sudah di-vacuum seal (tidak bisa diubah) 🔒<br><br>Huruf 'x' di akhir (.docx, .xlsx, .pptx) menandakan format XML yang lebih efisien, terkompresi, dan aman dari virus makro!"
+    category: "Teknologi Komunikasi",
+    question: "Pelaku teknologi komunikasi mencakup semua berikut, KECUALI…",
+    options: [
+      "Pemakai",
+      "Perusahaan penyedia jasa telekomunikasi", 
+      "Produsen peralatan komunikasi",
+      "Hacker"
+    ],
+    answer: 3,
+    explanation: "Berdasarkan Pertemuan 2: 'Pelaku Teknologi Komunikasi: 1. Pemakai, 2. Perusahaan penyedia jasa telekomunikasi, 3. Produsen peralatan komunikasi, 4. Badan yang mengatur/mengkoordinir'"
   },
   {
     id: 10,
-    category: "Sistem Operasi",
-    question: "Lokasi default Recycle Bin pada Windows digunakan untuk…",
-    options: ["Backup sistem otomatis", "Tempat file sementara saat dihapus", "Menyimpan file virus", "Instalasi aplikasi"],
+    category: "Teknologi Komunikasi",
+    question: "Informasi yang berkualitas menurut Mc. Leod (1997) harus memiliki ciri…",
+    options: [
+      "Hanya akurat saja",
+      "Akurat, tepat waktu, relevan, dan lengkap", 
+      "Hanya cepat",
+      "Tidak perlu lengkap"
+    ],
     answer: 1,
-    explanation: "Recycle Bin adalah 'tempat sampah pintar' yang menampung file terhapus sementara sebelum dihapus permanen. <br><br><strong>🗑️ Analogi:</strong> Recycle Bin seperti tempat sampah di rumah dengan sistem 2 tahap:<br><br><strong>Tahap 1 - Delete (Recycle Bin):</strong><br>Seperti membuang kertas ke tempat sampah di kamar. File masih ada dan bisa diambil kembali kapan saja (Restore). Tempat sampah masih ada di dalam rumah.<br><br><strong>Tahap 2 - Shift+Delete atau Empty Recycle Bin (Permanen):</strong><br>Seperti membuang sampah ke TPA (Tempat Pembuangan Akhir). File benar-benar hilang dan SANGAT SULIT dipulihkan. Sampah sudah keluar dari rumah.<br><br>💡 Tip: Selalu cek Recycle Bin sebelum dikosongkan, karena ini adalah kesempatan terakhir Anda menyelamatkan file yang salah hapus!"
+    explanation: "Berdasarkan Pertemuan 2: 'Ciri -ciri informasi yang berkualitas menurut Mc. Leod (1997) ada empat, yaitu: (1) akurat, (2) tepat waktu, (3) relevan, dan (4) lengkap.'"
   },
+
+  // 11-20: Revolusi Industri & Big Data (Pertemuan 3-4)
   {
     id: 11,
-    category: "Sistem Operasi",
-    question: "Shortcut keyboard untuk menyalin (copy) pada Windows adalah…",
-    options: ["Ctrl+X", "Ctrl+C", "Ctrl+V", "Ctrl+Z"],
+    category: "Revolusi Industri",
+    question: "Revolusi Industri 1.0 dimulai dengan penemuan…",
+    options: [
+      "Internet dan komputer",
+      "Mesin uap oleh James Watt", 
+      "Listrik dan ban berjalan",
+      "Artificial Intelligence"
+    ],
     answer: 1,
-    explanation: "Ctrl+C adalah shortcut untuk menyalin (copy) teks, file, atau objek ke clipboard. <br><br><strong>✂️ Analogi:</strong> Clipboard seperti kantong ajaib yang menyimpan sementara:<br><br><strong>Ctrl+C (Copy)</strong> = Fotokopi dokumen 📋<br>→ Dokumen asli tetap ada, tapi kamu punya salinannya di kantong<br>→ Contoh: Copy teks dari Word, file masih di folder asli<br><br><strong>Ctrl+X (Cut)</strong> = Gunting & ambil dokumen ✂️<br>→ Dokumen asli HILANG dari tempat asal, masuk ke kantong<br>→ Contoh: Cut file dari folder A, file hilang sampai di-paste ke folder B<br><br><strong>Ctrl+V (Paste)</strong> = Keluarkan isi kantong 📌<br>→ Taruh salinan/barang yang ada di kantong ke tempat baru<br><br><strong>Ctrl+Z (Undo)</strong> = Tombol mundur waktu ⏪<br>→ Batalkan aksi terakhir<br><br><strong>Ctrl+Y (Redo)</strong> = Tombol maju waktu ⏩<br>→ Ulangi aksi yang dibatalkan<br><br>💡 Ingat: <strong>C</strong>=Copy, <strong>X</strong>=X marks the spot (potong), <strong>V</strong>=down arrow (turunkan/paste)"
+    explanation: "Berdasarkan Pertemuan 3: 'Revolusi Industri I dimulai dari ditemukannya Mesin Uap oleh James Watt pada tahun 1764.'"
   },
   {
     id: 12,
-    category: "Sistem Operasi",
-    question: "Fungsi 'Task Manager' pada Windows adalah…",
-    options: ["Menghapus virus", "Mengelola proses/aplikasi dan performa", "Defrag disk", "Mengatur DNS"],
+    category: "Revolusi Industri",
+    question: "Revolusi Industri 4.0 terjadi ketika…",
+    options: [
+      "Ditemukan mesin uap",
+      "Robot dikontrol oleh artificial intelligence tanpa input manusia", 
+      "Ditemukan listrik",
+      "Ditemukan internet saja"
+    ],
     answer: 1,
-    explanation: "Task Manager adalah 'pusat kendali' Windows yang menampilkan dan mengelola proses, aplikasi, performa CPU/RAM, startup program, dan layanan sistem. <br><br><strong>🎛️ Analogi:</strong> Task Manager seperti DASHBOARD MOBIL yang menunjukkan semua indikator:<br><br><strong>Fungsi Task Manager:</strong><br><br>1️⃣ <strong>Processes (Proses)</strong> = Speedometer 🏎️<br>   → Lihat aplikasi apa saja yang berjalan<br>   → CPU/RAM yang dipakai setiap aplikasi<br>   → TUTUP aplikasi yang hang/freeze (End Task)<br><br>2️⃣ <strong>Performance (Performa)</strong> = Indikator mesin 📊<br>   → Monitor CPU, RAM, Disk, Network secara real-time<br>   → Lihat grafik penggunaan<br><br>3️⃣ <strong>Startup</strong> = Daftar aplikasi yang auto-start 🚀<br>   → Matikan aplikasi yang tidak perlu startup<br>   → Mempercepat booting Windows<br><br>4️⃣ <strong>Services (Layanan)</strong> = Mesin background ⚙️<br>   → Layanan Windows yang berjalan di belakang layar<br><br><strong>Cara membuka:</strong><br>• Tekan <strong>Ctrl+Shift+Esc</strong><br>• Atau klik kanan Taskbar → Task Manager<br><br>💡 Task Manager BUKAN antivirus, tapi bisa mendeteksi program mencurigakan yang memakan resource besar!"
+    explanation: "Berdasarkan Pertemuan 3: 'Revolusi Industri 4.0 terjadi ketika robot yang terkoneksi dengan sistem komputer, diperlengkapi dengan machine learning algorithms yang dapat belajar dan mengontrol robot itu sendiri tanpa input dari human operators yang dikenal dengan istilah artificial intellegence (AI).'"
   },
   {
     id: 13,
-    category: "Sistem Operasi",
-    question: "Struktur folder bertingkat pada OS disebut…",
-    options: ["Flat file", "Hierarki direktori", "Cluster index", "Relational tree"],
-    answer: 1,
-    explanation: "Hierarki direktori adalah struktur folder bertingkat seperti pohon terbalik, dimulai dari root (akar) hingga cabang-cabang subfolder. <br><br><strong>🌳 Analogi:</strong> Hierarki direktori seperti POHON KELUARGA atau STRUKTUR ORGANISASI:<br><br><strong>Windows:</strong><br><code>C:\\ (Root/Akar) 🌳<br>├─ Program Files\\ (Cabang utama)<br>│  ├─ Microsoft Office\\ (Cabang kecil)<br>│  └─ Adobe\\ (Cabang kecil)<br>├─ Users\\ (Cabang utama)<br>│  ├─ SXFT\\ (User folder)<br>│  │  ├─ Documents\\ (Dokumen)<br>│  │  │  └─ UTS\\ (Folder UTS)<br>│  │  ├─ Downloads\\ (Unduhan)<br>│  │  └─ Pictures\\ (Gambar)<br>└─ Windows\\ (System)</code><br><br><strong>Keuntungan Hierarki:</strong><br>✅ Organisasi terstruktur (mudah cari file)<br>✅ Pengelompokan logis (foto terpisah dari dokumen)<br>✅ Permission berbeda per folder (keamanan)<br><br><strong>Lawan dari Hierarki:</strong><br>• <strong>Flat File</strong> = Semua file dalam 1 folder (kacau!) 😵<br>• Bayangkan 10,000 file dalam 1 folder tanpa subfolder<br><br>💡 Path absolut: C:\\Users\\SXFT\\Documents\\file.docx<br>Path relatif: ..\\..\\Downloads\\file.zip"
+    category: "Big Data",
+    question: "Big Data menurut McKinsey Global (2011) dapat didefinisikan dengan karakteristik…",
+    options: [
+      "Volume, Velocity, Variety",
+      "Video, Voice, Visual", 
+      "Virtual, Verified, Valid",
+      "Version, Vendor, Value"
+    ],
+    answer: 0,
+    explanation: "Berdasarkan Pertemuan 4: 'Menurut McKinsey Global (2011), Big Data dapat didefinisikan dengan data yang memiliki skala (volume), distribusi (velocity), keragaman (variety) yang sangat besar'"
   },
   {
     id: 14,
-    category: "Sistem Operasi",
-    question: "Perintah untuk melihat daftar file di Command Prompt Windows adalah…",
-    options: ["ls", "dir", "list", "view"],
+    category: "Big Data",
+    question: "Teknologi Big Data dibagi menjadi 2 kelompok pemrosesan, yaitu…",
+    options: [
+      "Online dan Offline processing",
+      "Batch processing dan Streaming processing", 
+      "Fast dan Slow processing",
+      "Manual dan Automatic processing"
+    ],
     answer: 1,
-    explanation: "DIR (Directory) adalah perintah Command Prompt Windows untuk menampilkan daftar file dan folder dalam direktori. <br><br><strong>💻 Analogi:</strong> Command Prompt seperti berbicara langsung dengan komputer dalam bahasa mesin:<br><br><strong>Perintah Windows (CMD):</strong><br><br>• <strong>DIR</strong> = 'Tunjukkan isi folder ini!' 📂<br>  Contoh output:<br>  <code>Volume in drive C is OS<br>  Directory of C:\\Users\\SXFT<br>  <br>  Documents      [Folder]<br>  Downloads      [Folder]<br>  file.txt       1,024 bytes<br>  photo.jpg      2,048 bytes</code><br><br>• <strong>CD</strong> (Change Directory) = Pindah folder 🚶<br>  <code>cd Documents</code> → masuk ke folder Documents<br>  <code>cd ..</code> → naik 1 tingkat<br><br>• <strong>MD/MKDIR</strong> = Buat folder baru 📁<br>  <code>mkdir ProjectBaru</code><br><br>• <strong>DEL</strong> = Hapus file 🗑️<br>  <code>del file.txt</code><br><br>• <strong>COPY</strong> = Salin file 📋<br>  <code>copy file.txt D:\\Backup\\</code><br><br><strong>Linux/Mac (Terminal):</strong><br>• <strong>ls</strong> = List (sama seperti DIR)<br>• <strong>pwd</strong> = Print Working Directory<br>• <strong>rm</strong> = Remove file<br><br>💡 Ingat: Windows=DIR, Linux=LS (keduanya untuk lihat isi folder)"
+    explanation: "Berdasarkan Pertemuan 4: 'Untuk Volume Data, Teknologi Big Data dibagi menjadi 2 kelompok: batch processing yang mana digunakan untuk menganalisis data yang sudah settle (data at rest) pada satu waktu tertentu. Dan streaming processing yang mana digunakan untuk menganalisis data yang terus menerus terupdate setiap waktu (data in motion).'"
   },
-
-  // 15-22 Jaringan & Internet (Pertemuan 5 - Jaringan Komputer)
   {
     id: 15,
-    category: "Jaringan",
-    question: "LAN (Local Area Network) adalah bentuk jaringan komputer yang…",
-    options: ["Menghubungkan antar negara", "Luas areanya sangat terbatas (rumah, kantor, lab)", "Hanya menggunakan satelit", "Memerlukan biaya sangat mahal"],
+    category: "Artificial Intelligence",
+    question: "Artificial Intelligence (AI) menurut Rich and Knight [1991] adalah…",
+    options: [
+      "Komputer yang bisa menggantikan manusia sepenuhnya",
+      "Studi tentang bagaimana membuat komputer melakukan hal yang saat ini dilakukan lebih baik oleh manusia", 
+      "Program untuk membuat virus",
+      "Sistem operasi terbaru"
+    ],
     answer: 1,
-    explanation: "Menurut materi PTIK, LAN adalah bentuk jaringan komputer lokal yang luas areanya sangat terbatas, biasanya untuk jaringan rumahan, kantor, laboratorium komputer. <br><br><strong>🏘️ Analogi:</strong> Jaringan komputer seperti sistem DISTRIBUSI AIR:<br><br><strong>LAN (Local Area Network)</strong> = Pipa air dalam 1 rumah/gedung 🏠<br>   → <strong>Luas area: SANGAT TERBATAS</strong><br>   → Contoh: Rumahan, kantor, lab komputer<br>   → Media: Kabel (UTP/BNC) atau Wireless<br>   → Komputer saling berinteraksi & bertukar data<br>   → Berbagi hardware (printer bersama)<br><br><strong>Keuntungan LAN (dari materi):</strong><br>✅ <strong>File sharing</strong> → Saling tukar file<br>✅ <strong>Backup data</strong> → Simpan di beberapa komputer<br>✅ <strong>Printer sharing</strong> → 1 printer untuk semua<br>✅ <strong>Client-server</strong> → Manajemen data terpusat<br>✅ <strong>Komunikasi tanpa pulsa</strong> → Gratis!<br>✅ <strong>Remote monitoring</strong> → Kontrol jarak jauh<br>✅ <strong>Internet bersama</strong> → 1 koneksi untuk semua PC<br>✅ <strong>Resource sharing</strong> → Berbagi sumber daya<br><br><strong>MAN (Metropolitan Area Network)</strong> = Pipa air antar gedung dalam 1 kota 🌆<br>   → Luas: 10-50 KM (antar kantor/perusahaan)<br>   → Terdiri dari beberapa LAN terhubung<br>   → Media: Fiber optic, wireless<br><br><strong>WAN (Wide Area Network)</strong> = Pipa air antar kota/negara 🌍<br>   → Luas: Antar kota, pulau, negara, benua<br>   → Kumpulan MAN & LAN terintegrasi<br>   → Media: Satelit, VSAT, ISDN, DSL<br>   → Contoh: INTERNET!<br><br>💡 Urutan: LAN (rumah) → MAN (kota) → WAN (dunia/Internet)"
+    explanation: "Berdasarkan Pertemuan 4: 'Definisi AI menurut Para ahli: Rich and Knight [1991] - Kecerdasan Buatan (AI) merupakan sebuah studi tentang bagaimana membuat komputer melakukan hal-hal yang pada saat ini dapat dilakukan lebih baik oleh manusia.'"
   },
   {
     id: 16,
-    category: "Jaringan",
-    question: "Media transmisi jaringan yang menggunakan gelombang elektromagnetik (radio dan infra merah) disebut…",
-    options: ["Coaxial", "Fiber Optic", "Wireless", "Twisted Pair"],
-    answer: 2,
-    explanation: "Menurut materi PTIK Pertemuan 5, Wireless menggunakan gelombang elektromagnetik (radio dan infra merah) untuk komunikasi data tanpa kabel fisik. <br><br><strong>📡 Analogi:</strong> Media transmisi seperti sistem PENGIRIMAN PAKET:<br><br><strong>WIRELESS (Tanpa Kabel)</strong> = Drone pengiriman paket 🚁<br>   → Gelombang elektromagnetik (radio, infra merah)<br>   → Wireless LAN: Frekuensi 2.4 GHz<br>   → Data melalui udara (tanpa fasilitas fisik)<br>   → Point to point tanpa kabel<br><br><strong>✅ Kelebihan Wireless (dari materi):</strong><br>   1. Pemeliharaan MURAH 💰<br>   2. Infrastruktur berdimensi KECIL<br>   3. Pembangunan CEPAT<br>   4. Mudah & murah untuk direlokasi<br>   5. Mendukung PORTABILITAS<br>   6. Koneksi internet 24 jam<br>   7. Akses internet CEPAT<br><br><strong>Media Transmisi Kabel:</strong><br><br>• <strong>Coaxial</strong> = Truk pengiriman dengan pelindung 🚚<br>  → Kabel dengan lapisan pelindung<br>  → Konektor: BNC<br><br>• <strong>Twisted Pair (UTP/STP)</strong> = Sepeda motor 🏍️<br>  → Kabel telepon dengan 8 kawat<br>  → Konektor: RJ-45<br>  → Paling umum untuk LAN<br><br>• <strong>Fiber Optic</strong> = Pesawat jet 🛩️<br>  → Serat optik dengan cahaya<br>  → Paling cepat & mahal<br><br>💡 Wireless = Kebebasan bergerak tanpa kabel!"
+    category: "Artificial Intelligence",
+    question: "Program checker playing oleh Samuel (1963) unik karena…",
+    options: [
+      "Hanya bisa bermain catur",
+      "Menggunakan pengalamannya untuk meningkatkan kemampuan bermain", 
+      "Tidak memerlukan listrik",
+      "Bisa berbicara dengan manusia"
+    ],
+    answer: 1,
+    explanation: "Berdasarkan Pertemuan 4: 'Samual(1963) menulis sebuah program yang diberi nama checker playing program, yang tidak hanya untuk bermain game, tetapi digunakan juga pengalamannya pada permainan untuk mendukung kemampuan sebelumnya.'"
   },
   {
     id: 17,
-    category: "Jaringan",
-    question: "Alamat IP pada materi PTIK dijelaskan berupa susunan angka dengan format…",
-    options: ["a.b.c.d dengan nilai 0-255", "Hanya huruf kapital", "Angka 0-999", "Format tanggal"],
-    answer: 0,
-    explanation: "Menurut materi PTIK Pertemuan 6, Alamat IP berupa susunan angka: a.b.c.d dengan masing-masing a, b, c, d berupa bilangan 0 sampai 255. <br><br><strong>🏠 Analogi:</strong> IP Address seperti ALAMAT RUMAH di dunia digital:<br><br><strong>Format Alamat IP:</strong><br><code>a.b.c.d</code><br>→ Setiap bagian (oktet) bernilai 0-255<br><br><strong>Contoh VALID:</strong><br>✅ 192.168.1.1 → Alamat router rumah<br>✅ 8.8.8.8 → Google DNS<br>✅ 10.0.0.1 → Alamat lokal<br>✅ 172.16.0.1 → Alamat private<br><br><strong>Contoh INVALID:</strong><br>❌ 256.1.1.1 → Lebih dari 255<br>❌ 192.168.1.300 → Lebih dari 255<br>❌ ABC.DEF.GHI.JKL → Bukan angka<br><br><strong>IP Address vs Domain Name:</strong><br><br>• <strong>IP Address</strong>: 203.123.45.67 (angka mentah)<br>• <strong>Domain Name</strong>: bsi.ac.id (nama mudah diingat)<br><br><strong>Dari materi:</strong><br>Alamat IP dapat juga melalui nama domain<br>Contoh: bsi.ac.id<br><br><strong>Kenapa maksimal 255?</strong><br>→ 1 oktet = 8 bit<br>→ 2^8 = 256 kemungkinan<br>→ Nilai: 0 sampai 255<br><br>💡 IP Address = KTP komputer di internet!"
+    category: "Big Data",
+    question: "Dalam konteks Big Data, perbedaan antara Data, Information, dan Knowledge adalah…",
+    options: [
+      "Semuanya sama saja",
+      "Data adalah fakta mentah, Information adalah data yang direkam, Knowledge adalah peta mental kita", 
+      "Data lebih penting dari Knowledge",
+      "Information hanya untuk komputer"
+    ],
+    answer: 1,
+    explanation: "Berdasarkan Pertemuan 4: 'Data (Facts, a description of the World), Information (Captured Data and Knowledge), Knowledge (Our personal map/model of the world)'"
   },
   {
     id: 18,
-    category: "Jaringan",
-    question: "Komponen layanan internet yang memungkinkan seseorang mengirim dan menerima surat secara elektronik adalah…",
-    options: ["WWW", "E-mail", "FTP", "Telnet"],
-    answer: 1,
-    explanation: "Menurut materi PTIK Pertemuan 6, E-mail adalah salah satu fasilitas internet yang memungkinkan seseorang mengirim dan menerima surat secara elektronik, mudah dan cepat dalam penyampaian. <br><br><strong>📧 Analogi:</strong> Komponen layanan internet seperti FASILITAS KANTOR POS:<br><br><strong>E-MAIL (Surat Elektronik)</strong> = Layanan pos digital 💌<br>   → Kirim & terima surat via internet<br>   → MUDAH pengiriman<br>   → CEPAT penyampaian<br>   → Alasan populer: Efisien & instan!<br><br><strong>Komponen Layanan Internet (dari materi):</strong><br><br>1️⃣ <strong>E-mail</strong> ✉️<br>   → Surat elektronik<br><br>2️⃣ <strong>WWW (World Wide Web)</strong> 🌐<br>   → Browsing website<br>   → Multimedia interaktif<br><br>3️⃣ <strong>FTP (File Transfer Protocol)</strong> 📁<br>   → Download & Upload file<br>   → Transfer aplikasi utility<br><br>4️⃣ <strong>Telnet</strong> 💻<br>   → Hubungkan ke komputer jauh<br>   → PC jadi terminal<br><br>5️⃣ <strong>Talk, Chat, VoIP</strong> 💬<br>   → Komunikasi interaktif real-time<br>   → Yahoo Messenger, Mirc, MSN<br><br>6️⃣ <strong>Newsgroup</strong> 📰<br>   → Bulletin board elektronik<br><br>7️⃣ <strong>Mailing List</strong> 📮<br>   → Komunitas diskusi via email<br><br>💡 E-mail = surat tradisional versi digital yang lebih cepat!"
+    category: "Artificial Intelligence",
+    question: "Sudut pandang Kecerdasan Buatan (AI) dari sisi bisnis adalah…",
+    options: [
+      "Kumpulan peralatan powerful untuk menyelesaikan masalah bisnis",
+      "Hanya untuk penelitian akademik", 
+      "Cara membuat robot",
+      "Sistem operasi canggih"
+    ],
+    answer: 0,
+    explanation: "Berdasarkan Pertemuan 4: 'Sudut Pandang Bisnis: Kecerdasan buatan adalah kumpulan peralatan yang sangat powerful dan metodologis dalam menyelesaikan masalah bisnis.'"
   },
   {
     id: 19,
-    category: "Jaringan",
-    question: "Mailing list adalah aplikasi internet yang berfungsi untuk…",
-    options: ["Browsing website", "Group diskusi lewat email", "Download file besar", "Remote komputer"],
+    category: "Revolusi Industri",
+    question: "Karakteristik utama Revolusi Industri 4.0 menurut materi PTIK adalah…",
+    options: [
+      "Mesin uap",
+      "Penyatuan dunia online dan industri produksi", 
+      "Ban berjalan",
+      "Hanya internet"
+    ],
     answer: 1,
-    explanation: "Menurut materi PTIK, Mailing List adalah aplikasi internet berupa group-group diskusi lewat internet dengan sistem milis yang memerlukan pendaftaran ke Moderator. <br><br><strong>📮 Analogi:</strong> Mailing List seperti GRUP WHATSAPP versi EMAIL:<br><br><strong>MAILING LIST (Milis)</strong> = Komunitas email 👥<br>   → Group diskusi lewat internet<br>   → Semua member dapat email yang sama<br>   → Harus DAFTAR ke Moderator<br>   → Email dicatat & bergabung jadi member<br><br><strong>Cara Kerja Milis:</strong><br>1. Daftar email ke Moderator milis<br>2. Moderator catat & masukkan ke group<br>3. Anggota kirim email ke alamat milis<br>4. SEMUA member terima email tersebut<br>5. Diskusi berlangsung via email<br><br><strong>Contoh Milis (dari materi):</strong><br>• <strong>Dosen@yahoogroups.com</strong><br>  → Komunitas Dosen di Indonesia<br><br>• <strong>Manager-indonesia@yahoogroups.com</strong><br>  → Komunitas orang-orang manajemen<br><br>• Dan lainnya (komunitas sesuai minat)<br><br><strong>Bedanya dengan Email biasa:</strong><br>• Email biasa: 1 orang ke 1 orang<br>• Mailing list: 1 orang ke BANYAK orang otomatis<br><br><strong>Mirip dengan Newsgroup:</strong><br>• Newsgroup = Bulletin board elektronik<br>• Milis = Diskusi via email subscribe<br><br>💡 Mailing list = CC email otomatis ke ratusan orang sekaligus!"
+    explanation: "Berdasarkan Pertemuan 3: 'Revolusi industri 4.0 merupakan penyatuan dunia online dengan industri produksi, sehingga merupakan revolusi industri digital.'"
   },
   {
     id: 20,
-    category: "Jaringan",
-    question: "FTP (File Transfer Protocol) adalah fasilitas internet untuk…",
-    options: ["Mengirim email", "Download dan Upload file/data", "Chatting online", "Video conference"],
+    category: "Big Data",
+    question: "Big Data dari perspektif bisnis digunakan untuk…",
+    options: [
+      "Hanya menyimpan data",
+      "Decision making, improving operations, dan monetizing data", 
+      "Menghapus data lama",
+      "Membuat website"
+    ],
     answer: 1,
-    explanation: "Menurut materi PTIK, FTP adalah fasilitas yang memungkinkan transfer file (download/upload) dari server ke komputer user atau sebaliknya. <br><br><strong>📁 Analogi:</strong> FTP seperti TRUK PENGANGKUT BARANG:<br><br><strong>FTP (File Transfer Protocol)</strong> = Layanan angkut file 🚚<br>   → Transfer file/data dari server ke user<br>   → DOWNLOAD: Server → Komputer Anda<br>   → UPLOAD: Komputer Anda → Server<br><br><strong>Kegunaan FTP:</strong><br>✅ Download software/aplikasi dari server<br>✅ Download utility programs<br>✅ Upload website ke hosting<br>✅ Transfer file besar<br>✅ Backup data ke server<br><br><strong>Aplikasi yang Support FTP (dari materi):</strong><br>• <strong>Mozilla Firefox</strong> 🦊<br>• <strong>Internet Explorer</strong> 🌐<br>• <strong>Opera</strong> 🎭<br>• Dan lainnya...<br><br><strong>Beda FTP dengan Layanan Lain:</strong><br><br>• <strong>E-mail</strong> = Kirim pesan teks 📧<br>• <strong>FTP</strong> = Kirim FILE (dokumen, video, software) 📦<br>• <strong>Chat</strong> = Komunikasi real-time 💬<br>• <strong>WWW</strong> = Browsing website 🌐<br><br><strong>Cara Kerja FTP:</strong><br>1. Koneksi ke server FTP (ftp://server.com)<br>2. Login (username & password)<br>3. Pilih file yang mau download/upload<br>4. Transfer dimulai<br>5. Selesai!<br><br>💡 FTP = Cara klasik transfer file sebelum ada cloud storage!"
+    explanation: "Berdasarkan Pertemuan 3: 'ada tiga area utama dalam bisnis yang sangat membutuhkan akses terhadap big data, yaitu improving decision making, improving operations, dan the monetizing of data'"
   },
+
+  // 21-30: Jaringan Komputer (Pertemuan 5)
   {
     id: 21,
-    category: "Jaringan",
-    question: "Konfigurasi jaringan Peer-to-peer cocok untuk…",
-    options: ["Jaringan dengan komputer banyak dan terpusat", "Jaringan dengan jumlah komputer sedikit tanpa server terpusat", "Hanya untuk WAN", "Memerlukan administrator khusus"],
+    category: "Jaringan Komputer",
+    question: "LAN (Local Area Network) adalah bentuk jaringan komputer yang…",
+    options: [
+      "Menghubungkan antar negara",
+      "Luas areanya sangat terbatas (rumah, kantor, lab)", 
+      "Hanya menggunakan satelit",
+      "Memerlukan biaya sangat mahal"
+    ],
     answer: 1,
-    explanation: "Menurut materi PTIK, konfigurasi Peer-to-peer digunakan pada jaringan dengan jumlah komputer SEDIKIT, dimana masing-masing komputer memiliki status kedudukan SAMA dan TIDAK memerlukan sistem terpusat (server). <br><br><strong>👥 Analogi:</strong> Konfigurasi jaringan seperti STRUKTUR ORGANISASI:<br><br><strong>PEER-TO-PEER</strong> = Tim kecil tanpa bos 🤝<br>   → Semua komputer SETARA (no boss!)<br>   → Jumlah komputer: SEDIKIT<br>   → TIDAK ada server terpusat<br>   → File sharing: Komputer ke komputer langsung<br>   → Printer sharing: Berbagi printer antar PC<br><br><strong>✅ Kelebihan Peer-to-Peer:</strong><br>• Implementasi MURAH & MUDAH 💰<br>• Tidak perlu software administrasi khusus<br>• Tidak butuh administrator jaringan<br>• Setup cepat<br><br><strong>❌ Kekurangan Peer-to-Peer:</strong><br>• TIDAK cocok skala besar (administrasi tidak terkontrol)<br>• Tiap user harus dilatih tugas administratif<br>• Keamanan RENDAH 🔓<br>• Semakin banyak sharing → kinerja turun<br><br><strong>CLIENT-SERVER</strong> = Perusahaan dengan bos �<br>   → Ada DEDICATED SERVER (pusat)<br>   → Ada CLIENT/Workstation (penerima layanan)<br>   → Server: File server, mail server, web server<br>   → Kontrol terpusat<br><br><strong>✅ Kelebihan Client-Server:</strong><br>• Keamanan & administrasi LEBIH BAIK �<br>• Server tidak terbebani sebagai workstation<br>• Semua data di-backup terpusat<br>• Cocok untuk SKALA BESAR<br><br><strong>❌ Kekurangan Client-Server:</strong><br>• Biaya operasional MAHAL 💸<br>• Server butuh spesifikasi TINGGI<br>• Kalau server rusak = SEMUA terganggu<br><br>💡 Pilih: Peer-to-peer untuk rumah/kantor kecil, Client-Server untuk perusahaan!"
+    explanation: "Berdasarkan Pertemuan 5: 'LAN adalah bentuk jaringan komputer lokal yang luas areanya sangat terbatas.biasanya untuk jaringan rumahan, kantor, laboraturium komputer'"
   },
   {
     id: 22,
-    category: "Jaringan",
-    question: "Kabel UTP (Unshielded Twisted Pair) memiliki karakteristik…",
-    options: ["Tidak memiliki lapisan pelindung, harga murah, mudah terpengaruh noise", "Paling mahal di antara semua kabel", "Jarak jangkau unlimited", "Hanya untuk fiber optic"],
-    answer: 0,
-    explanation: "Menurut materi PTIK, UTP (Unshielded Twisted Pair) tidak memiliki lapisan pelindung, harganya paling murah di antara kabel jaringan lainnya, tetapi mudah terpengaruh noise (gangguan). <br><br><strong>� Analogi:</strong> Kabel jaringan seperti SELANG AIR dengan berbagai kualitas:<br><br><strong>Kabel yang digunakan dalam jaringan ada 3 jenis:</strong><br><br>1️⃣ <strong>COAXIAL (BNC)</strong> = Selang berlapis �️<br>   → Konektor: BNC (British Naval Connector)<br>   → 2 tipe:<br>     • Baseband (50 ohm) - transmisi digital<br>     • Broadband (75 ohm) - transmisi analog<br>   → Thin coaxial (thinnet) & Thick coaxial (thicknet)<br><br>   <strong>✅ Kelebihan:</strong><br>   • Hampir TIDAK terpengaruh noise<br>   • Harga relatif murah<br><br>   <strong>❌ Kelemahan:</strong><br>   • Mudah dibajak (security rendah)<br>   • Thick coaxial sulit dipasang<br><br>2️⃣ <strong>TWISTED PAIR</strong> = Selang kabel telepon 📞<br>   → Konektor: RJ-45<br>   → 2 jenis:<br><br>   A. <strong>STP (Shielded Twisted Pair)</strong> �️<br>      • ADA lapisan pelindung internal<br>      • Melindungi dari gangguan saat transmisi<br>      • Lebih mahal dari UTP<br><br>   B. <strong>UTP (Unshielded Twisted Pair)</strong> ← JAWABAN<br>      • TIDAK punya lapisan pelindung<br><br>      <strong>✅ Kelebihan:</strong><br>      • Harga PALING MURAH 💰<br>      • Mudah instalasi<br>      • Paling populer untuk LAN!<br><br>      <strong>❌ Kelemahan:</strong><br>      • Jarak jangkau hanya 100 meter<br>      • Kecepatan terbatas (1 Gbps)<br>      • MUDAH terpengaruh noise 📡<br><br>3️⃣ <strong>FIBER OPTIC (Serat Optik)</strong> = Selang cahaya ✨<br>   → 2 mode: Multi mode & Single mode<br>   → Diameter inti single mode: 3-10 mm<br>   → Cahaya melalui 1 lintasan saja<br><br>   <strong>✅ Kelebihan:</strong><br>   • Ukuran kecil & ringan<br>   • Sulit terpengaruh interferensi<br>   • Redaman transmisi kecil<br>   • Bidang frekuensi LEBAR<br>   • Kecepatan TERTINGGI! 🚀<br><br>   <strong>❌ Kelemahan:</strong><br>   • Instalasi SULIT<br>   • Tidak fleksibel<br>   • Harga MAHAL 💸<br><br><strong>Wireless (Tanpa Kabel)</strong> = Udara sebagai media 📡<br>   → Gelombang elektromagnetik (radio, infra merah)<br>   → Frekuensi: 2.4 GHz (WiFi)<br>   → Kecepatan: Tergantung standar (WiFi 6 = 9.6 Gbps)<br><br>   <strong>✅ Kelebihan:</strong><br>   • Pemeliharaan murah<br>   • Infrastruktur kecil<br>   • Pembangunan cepat<br>   • Mudah direlokasi & portable<br>   • Internet 24/7<br><br>💡 Pilihan: Budget terbatas → UTP, Kecepatan tinggi → Fiber Optic, Mobilitas → Wireless!"
+    category: "Jaringan Komputer",
+    question: "Media transmisi jaringan yang menggunakan gelombang elektromagnetik disebut…",
+    options: [
+      "Coaxial",
+      "Fiber Optic", 
+      "Wireless",
+      "Twisted Pair"
+    ],
+    answer: 2,
+    explanation: "Berdasarkan Pertemuan 5: 'Wireless adalah teknologi tanpa kabel, dalam hal ini adalah melakukan hubungan telekomunikasi dengan menggunakan gelombang elektromagnetik sebagai pengganti kabel.'"
   },
-
-  // 23-28 Internet & WWW (Pertemuan 6)
   {
     id: 23,
-    category: "Internet & WWW",
-    question: "Browser internet pertama yang menggunakan konsep GUI (Graphical User Interface) adalah…",
-    options: ["Internet Explorer", "Mosaic", "Netscape Navigator", "Google Chrome"],
+    category: "Jaringan Komputer",
+    question: "Konfigurasi jaringan Peer-to-peer cocok untuk…",
+    options: [
+      "Jaringan dengan komputer banyak dan terpusat",
+      "Jaringan dengan jumlah komputer sedikit tanpa server terpusat", 
+      "Hanya untuk WAN",
+      "Memerlukan administrator khusus"
+    ],
     answer: 1,
-    explanation: "Menurut materi PTIK, browser internet pertama yang dipakai adalah Mosaic dengan menggunakan konsep GUI yang dikembangkan oleh NCSA pada tahun 1993. <br><br><strong>🌐 Analogi:</strong> Browser seperti EVOLUSI KENDARAAN:<br><br><strong>Sejarah Browser:</strong><br><br>1️⃣ <strong>MOSAIC (1993)</strong> = Mobil pertama dengan kemudi 🚗<br>   → Browser PERTAMA dengan GUI!<br>   → Dikembangkan oleh <strong>NCSA</strong><br>   → Sebelumnya: Text-only (command line)<br>   → Revolusioner: Bisa lihat GAMBAR di web!<br><br>2️⃣ <strong>Netscape Navigator (1994)</strong><br>   → Dikembangkan tim Mosaic<br>   → Dominan di era 90-an<br><br>3️⃣ <strong>Internet Explorer (1995)</strong><br>   → Microsoft masuk arena browser<br>   → Built-in Windows<br><br>4️⃣ <strong>Firefox (2004)</strong><br>   → Open source<br>   → Cepat & aman<br><br>5️⃣ <strong>Chrome (2008)</strong><br>   → Google's browser<br>   → Paling populer sekarang!<br><br><strong>Apa itu GUI?</strong><br>• <strong>GUI</strong> = Graphical User Interface<br>• Tampilan visual dengan icon, gambar, tombol<br>• Bukan text command yang ribet<br>• User-friendly: Klik & point<br><br><strong>Sebelum Mosaic:</strong><br>❌ Text-only browser (gelap, membosankan)<br>❌ Ketik command manual<br>❌ Tidak bisa lihat gambar inline<br><br><strong>Sesudah Mosaic:</strong><br>✅ Tampilan visual menarik<br>✅ Klik link dengan mouse<br>✅ Lihat gambar langsung di halaman<br>✅ Multimedia support<br><br>💡 Mosaic = Nenek moyang Chrome & Firefox yang Anda pakai hari ini!"
+    explanation: "Berdasarkan Pertemuan 5: 'Konfigurasi ini digunakan pada jaringan dengan jumlah komputer yang sedikit, dimana masing-masing komputer memiliki status kedudukan yang sama dan tidak memerlukan sistem yang terpusat(server).'"
   },
   {
     id: 24,
-    category: "Internet & WWW",
-    question: "Jenis domain '.ac' pada website menunjukkan bahwa situs tersebut adalah…",
-    options: ["Perusahaan komersial", "Situs tentang pendidikan/perguruan tinggi", "Organisasi non-profit", "Situs pemerintah"],
-    answer: 1,
-    explanation: "Menurut materi PTIK, domain '.ac' (Academic) adalah situs tentang pendidikan/perguruan tinggi. <br><br><strong>🏫 Analogi:</strong> Domain seperti PLAT NOMOR kendaraan yang menunjukkan asal:<br><br><strong>Jenis Domain Website (dari materi):</strong><br><br>1️⃣ <strong>.com</strong> = Company (Komersial) 🏢<br>   → Perusahaan swasta/lembaga usaha<br>   → Mencari laba<br>   → Contoh: tokopedia.com, google.com<br><br>2️⃣ <strong>.org</strong> = Organization (Organisasi) 🤝<br>   → Organisasi/yayasan<br>   → TIDAK mencari laba<br>   → Contoh: wikipedia.org, unicef.org<br><br>3️⃣ <strong>.ac</strong> = Academic (Akademik) 🎓 ← JAWABAN<br>   → Pendidikan/PERGURUAN TINGGI<br>   → Contoh: bsi.ac.id, ui.ac.id<br><br>4️⃣ <strong>.edu</strong> = Education (Pendidikan) 📚<br>   → Situs pendidikan (lebih umum)<br>   → Contoh: mit.edu, harvard.edu<br><br>5️⃣ <strong>.net</strong> = Network (Jaringan) 🌐<br>   → Situs berupa jaringan dari url/web lain<br>   → Provider internet<br><br>6️⃣ <strong>.gov / .go</strong> = Governance (Pemerintah) 🏛️<br>   → Situs milik pemerintahan<br>   → Contoh: kemendikbud.go.id<br><br>7️⃣ <strong>.mil</strong> = Military (Militer) 🪖<br>   → Situs milik militer<br>   → Contoh: army.mil<br><br><strong>Domain Indonesia:</strong><br>• .co.id = Perusahaan Indonesia<br>• .ac.id = Akademik Indonesia<br>• .go.id = Pemerintah Indonesia<br>• .or.id = Organisasi Indonesia<br><br>💡 Lihat domain untuk tahu kredibilitas website!"
+    category: "Jaringan Komputer",
+    question: "Kabel UTP (Unshielded Twisted Pair) memiliki karakteristik…",
+    options: [
+      "Tidak memiliki lapisan pelindung, harga murah, mudah terpengaruh noise",
+      "Paling mahal di antara semua kabel", 
+      "Jarak jangkau unlimited",
+      "Hanya untuk fiber optic"
+    ],
+    answer: 0,
+    explanation: "Berdasarkan Pertemuan 5: 'UTP (Unshielded Twisted Pair) - Tidak memiliki lapisan pelindung. Kelebihan: Harga relatif paling murah, Mudah dalam membangun instalasi. Kelemahan: Mudah terpengaruh noise (gangguan)'"
   },
   {
     id: 25,
-    category: "Internet & WWW",
-    question: "Struktur alamat web 'http://www.bsi.ac.id/' dijelaskan sebagai…",
-    options: ["http = service transfer, www = alamat informasi, bsi.ac.id = alamat yang dituju", "Hanya nama domain saja", "Alamat email", "Nomor IP address"],
-    answer: 0,
-    explanation: "Menurut materi PTIK, struktur alamat web terdiri dari: http (service transfer), www (alamat informasi di internet), bsi.ac.id (alamat informasi yang dituju). <br><br><strong>🌐 Analogi:</strong> URL seperti ALAMAT LENGKAP PENGIRIMAN PAKET:<br><br><strong>Contoh: http://www.bsi.ac.id/</strong><br><br>1️⃣ <strong>http://</strong> = Metode pengiriman 📦<br>   → <strong>HTTP</strong> (HyperText Transfer Protocol)<br>   → <strong>Service transfer</strong> yang digunakan di web<br>   → Protokol komunikasi<br>   → Alternatif: HTTPS (secure), FTP (file transfer)<br><br>2️⃣ <strong>www</strong> = Nama jalan/kawasan 🏘️<br>   → <strong>Alamat informasi di internet</strong><br>   → World Wide Web<br>   → Subdomain (bisa diganti: mail, drive, docs, dll)<br><br>3️⃣ <strong>bsi.ac.id</strong> = Alamat tujuan spesifik 🏠<br>   → <strong>Alamat informasi yang dituju</strong><br>   → Domain name<br>   → Menggantikan IP address (lebih mudah diingat)<br><br><strong>Analogi Lengkap:</strong><br><code>http://www.bsi.ac.id/jurusan/ti/index.html</code><br><br>• <strong>http://</strong> → Pakai kendaraan (protokol)<br>• <strong>www.</strong> → Kawasan/zona<br>• <strong>bsi.ac.id</strong> → Nama gedung<br>• <strong>/jurusan/ti/</strong> → Lantai & ruangan<br>• <strong>index.html</strong> → File dokumen spesifik<br><br><strong>Service Transfer Lain:</strong><br>• <strong>https://</strong> → HTTP Secure (aman) 🔒<br>• <strong>ftp://</strong> → File Transfer Protocol 📁<br>• <strong>mailto:</strong> → Email link ✉️<br><br>💡 URL = Alamat lengkap untuk menemukan halaman web!"
+    category: "Jaringan Komputer",
+    question: "Kelebihan jaringan Client-Server adalah…",
+    options: [
+      "Implementasi murah dan mudah",
+      "Keamanan dan administrasi lebih baik", 
+      "Tidak memerlukan administrator",
+      "Semua komputer setara"
+    ],
+    answer: 1,
+    explanation: "Berdasarkan Pertemuan 5: 'Kelebihan Jaringan Client-Server: Karena hanya ada satu administrator yang mengatur sistem dalam jaringan, maka sudah dapat dipastikan kalau keamanan dan administrasi dalam jaringan client-server lebih baik.'"
   },
+
+  // 26-35: Internet & WWW (Pertemuan 6)
   {
     id: 26,
-    category: "Internet & WWW",
-    question: "Webhosting adalah…",
-    options: ["Software browser", "Tempat menyimpan data/dokumen di web server yang tersambung internet", "Alamat email", "Sistem operasi"],
-    answer: 1,
-    explanation: "Menurut materi PTIK, Webhosting adalah tempat seseorang bisa menyimpan data atau dokumen di sebuah web server yang tersambung dengan internet agar dapat diakses oleh orang lain. <br><br><strong>🏢 Analogi:</strong> Webhosting seperti SEWA TEMPAT untuk TOKO ONLINE:<br><br><strong>WEBHOSTING</strong> = Tanah & gedung untuk website Anda 🏠<br>   → Tempat menyimpan data/dokumen<br>   → Di web server (komputer khusus)<br>   → Tersambung internet 24/7<br>   → Dapat diakses orang lain<br><br><strong>Apa yang Disimpan di Hosting?</strong><br>• File HTML, CSS, JavaScript<br>• Gambar, video, audio<br>• Database (MySQL, PostgreSQL)<br>• Aplikasi web (WordPress, dll)<br><br><strong>Website vs Webhosting:</strong><br><br>• <strong>WEBSITE</strong> = Toko/rumah Anda 🏪<br>  → Konten, desain, halaman<br>  → Yang dilihat pengunjung<br>  → Domain: www.tokosaya.com<br><br>• <strong>WEBHOSTING</strong> = Tanah tempat toko berdiri 🏗️<br>  → Infrastruktur penyimpanan<br>  → Server, storage, bandwidth<br>  → Tidak terlihat pengunjung<br><br><strong>Analogi Lengkap:</strong><br>Bayangkan buka toko online:<br><br>1. <strong>Domain</strong> (www.tokosaya.com) = Alamat toko 📍<br>2. <strong>Webhosting</strong> = Gedung/tanah toko 🏢<br>3. <strong>Website</strong> = Isi toko & display barang 🛍️<br>4. <strong>Internet</strong> = Jalan raya ke toko 🛣️<br><br><strong>Provider Hosting:</strong><br>• Niagahoster, Hostinger (Indonesia)<br>• GoDaddy, Bluehost (Internasional)<br>• AWS, Google Cloud (Enterprise)<br><br>💡 Tanpa hosting, website Anda tidak bisa diakses di internet!"
+    category: "Internet",
+    question: "Protokol yang digunakan di internet adalah…",
+    options: [
+      "HTTP/HTTPS",
+      "FTP/SFTP", 
+      "TCP/IP",
+      "SMTP/POP3"
+    ],
+    answer: 2,
+    explanation: "Berdasarkan Pertemuan 6: 'Protokol yang digunakan di internet adalah TCP/IP ( Transmission Control Protocol / Internet Protocol ).'"
   },
   {
     id: 27,
-    category: "Internet & WWW",
-    question: "Sepuluh Hak & Prinsip Internet yang pertama adalah…",
-    options: ["Hak dan Keadilan Sosial", "Keuniversalan dan Kesetaraan", "Aksesibilitas", "Kebebasan Berekspresi"],
+    category: "Internet",
+    question: "Komponen layanan internet yang memungkinkan seseorang mengirim dan menerima surat secara elektronik adalah…",
+    options: [
+      "WWW",
+      "E-mail", 
+      "FTP",
+      "Telnet"
+    ],
     answer: 1,
-    explanation: "Menurut materi PTIK Pertemuan 6, prinsip pertama dari Sepuluh Hak & Prinsip Internet adalah 'Keuniversalan dan Kesetaraan' - Semua manusia terlahir bebas dan setara dalam harga diri dan hak. <br><br><strong>⚖️ Analogi:</strong> Prinsip Internet seperti DEKLARASI HAK ASASI MANUSIA versi digital:<br><br><strong>Sepuluh Hak & Prinsip Internet:</strong><br><br>1️⃣ <strong>Keuniversalan dan Kesetaraan</strong> ← JAWABAN<br>   → Semua manusia terlahir BEBAS & SETARA<br>   → Harga diri dan hak harus dihargai<br>   → Dilindungi & dipenuhi di lingkungan online<br>   → Seperti: Tidak ada diskriminasi di internet<br><br>2️⃣ <strong>Hak dan Keadilan Sosial</strong><br>   → Internet = ruang untuk HAM<br>   → Kemajuan keadilan sosial<br>   → Semua punya tugas hormati hak orang lain<br><br>3️⃣ <strong>Aksesibilitas</strong><br>   → Semua punya HAK SAMA akses internet<br>   → Internet yang AMAN & TERBUKA<br>   → Tidak boleh ada yang terhalangi<br><br><strong>Kenapa Prinsip Ini Penting?</strong><br><br>Internet menawarkan kesempatan yang belum pernah ada sebelumnya dalam mewujudkan HAK ASASI MANUSIA dan memainkan peranan semakin penting dalam kehidupan sehari-hari.<br><br><strong>Implementasi:</strong><br>✅ Semua orang berhak punya akses internet<br>✅ Tidak ada sensor berdasarkan ras/agama/status<br>✅ Perlindungan privasi & data pribadi<br>✅ Kebebasan berekspresi online<br>✅ Keamanan dari hate speech & cyberbullying<br><br><strong>Tanggung Jawab:</strong><br>• Publik & swasta harus MENGHARGAI & MELINDUNGI HAM di internet<br>• Langkah-langkah untuk internet berbasis hak<br><br>💡 Internet bukan hanya teknologi, tapi HAK ASASI setiap manusia!"
+    explanation: "Berdasarkan Pertemuan 6: 'Surat Elektronik (E-mail) - Merupakan salahsatu fasilitas internet yang memungkinkan seseorang mengirim dan menerima surat secara elektronik.'"
   },
   {
     id: 28,
-    category: "Internet & WWW",
-    question: "Aktivitas yang DAPAT ditangani oleh Internet menurut materi PTIK adalah…",
-    options: ["Hanya untuk game online", "Sistem pembelajaran jarak jauh, telepon, pencarian kerja, transfer uang", "Tidak bisa untuk komunikasi", "Hanya untuk hiburan"],
+    category: "Internet",
+    question: "Mailing list adalah aplikasi internet yang berfungsi untuk…",
+    options: [
+      "Browsing website",
+      "Group diskusi lewat email", 
+      "Download file besar",
+      "Remote komputer"
+    ],
     answer: 1,
-    explanation: "Menurut materi PTIK Pertemuan 6, sebagian aktivitas yang dapat ditangani Internet: 1) Sistem pembelajaran jarak jauh, 2) Sistem telepon, 3) Pencarian lowongan kerja, 4) Transfer uang. <br><br><strong>🌍 Analogi:</strong> Internet seperti PISAU SWISS ARMY - satu alat untuk banyak fungsi:<br><br><strong>Aktivitas yang Ditangani Internet (dari materi):</strong><br><br>1️⃣ <strong>Sistem Pembelajaran Jarak Jauh</strong> 🎓<br>   → E-Learning (Google Classroom, Moodle)<br>   → Kuliah online (Zoom, Meet)<br>   → MOOC (Coursera, edX)<br>   → Video tutorial (YouTube Education)<br><br>2️⃣ <strong>Sistem Telepon</strong> ☎️<br>   → VoIP (Voice over Internet Protocol)<br>   → WhatsApp Call, Skype<br>   → Zoom meeting<br>   → Lebih murah dari telepon konvensional!<br><br>3️⃣ <strong>Pencarian Lowongan Kerja</strong> 💼<br>   → JobStreet, LinkedIn<br>   → Indeed, Glints<br>   → Portal karir perusahaan<br>   → Remote work opportunities<br><br>4️⃣ <strong>Transfer Uang</strong> 💰<br>   → Internet Banking (BCA Mobile, Mandiri Online)<br>   → E-wallet (GoPay, OVO, Dana)<br>   → Transfer antar bank<br>   → Pembayaran online<br><br><strong>Aktivitas Lain (dari kegunaan internet):</strong><br>✅ Informasi cepat & murah (Google)<br>✅ E-Commerce (belanja online)<br>✅ Media sosial (komunikasi)<br>✅ Streaming (Netflix, Spotify)<br>✅ Cloud storage (Drive, Dropbox)<br>✅ Gaming online<br>✅ Telemedicine (konsultasi dokter)<br><br><strong>Dampak Internet:</strong><br>• Mengurangi biaya & waktu<br>• Menghilangkan batasan geografis<br>• Efisiensi komunikasi & bisnis<br>• Akses informasi unlimited<br><br>💡 Internet = Swiss Army Knife digital untuk segala aktivitas modern!"
+    explanation: "Berdasarkan Pertemuan 6: 'Mailing list - Adalah perkembangan dari e-mail, seseorang yang sudah mempunyai e-mail dapat berlangganan (member) berita-berita (newsletter) ataupun informasi-informasi lain dari suatu topik yang tertentu, atau sebagai wadah bergabung kelompok/group orang-orang dengan kesamaan minat'"
   },
-
-  // 29-36 Teknologi Informasi & Komunikasi (Pertemuan 1-2)
   {
     id: 29,
-    category: "Teknologi Informasi",
-    question: "Teknologi Informasi menurut Haaq dan Keen adalah…",
-    options: ["Hanya hardware komputer", "Seperangkat alat yang membantu bekerja dengan informasi dan melakukan tugas pemrosesan informasi", "Hanya software", "Hanya internet"],
+    category: "Internet",
+    question: "FTP (File Transfer Protocol) adalah fasilitas internet untuk…",
+    options: [
+      "Mengirim email",
+      "Download dan Upload file/data", 
+      "Chatting online",
+      "Video conference"
+    ],
     answer: 1,
-    explanation: "Menurut Haaq dan Keen dalam materi PTIK Pertemuan 1, Teknologi Informasi adalah seperangkat alat yang membantu bekerja dengan informasi dan melakukan tugas-tugas yang berhubungan dengan pemrosesan informasi. <br><br><strong>💡 Analogi:</strong> TI seperti TOOLBOX TUKANG yang lengkap:<br><br><strong>Teknologi Informasi = Set of Tools 🧰</strong><br>   → BUKAN hanya hardware<br>   → BUKAN hanya software<br>   → BUKAN hanya internet<br>   → TAPI: SEPERANGKAT ALAT yang membantu:<br>     1. Bekerja dengan informasi<br>     2. Memproses informasi<br>     3. Mengelola informasi<br><br><strong>Definisi TI dari Para Ahli:</strong><br><br>1️⃣ <strong>Haaq & Keen</strong> ← JAWABAN<br>   → Set of tools untuk bantu kerja dengan informasi<br>   → Tools untuk tugas pemrosesan informasi<br><br>2️⃣ <strong>Akhmad Fauzi</strong><br>   → TI = teknologi yang memanfaatkan komputer<br>   → Perangkat utama untuk olah data jadi informasi<br><br>3️⃣ <strong>Martin</strong><br>   → Tidak hanya komputer (hardware & software)<br>   → Juga teknologi komunikasi untuk kirim informasi<br><br>4️⃣ <strong>Williams & Sawyer</strong><br>   → Menggabungkan komputasi dengan jalur komunikasi berkecepatan tinggi<br>   → Membawa data, suara, video<br><br><strong>Komponen TI:</strong><br>• Hardware (komputer, server) 💻<br>• Software (program, aplikasi) 📀<br>• Data & Informasi 📊<br>• Komunikasi (internet, jaringan) 🌐<br>• Brainware (manusia) 👨‍💼<br><br>💡 TI = Tools lengkap untuk bekerja dengan informasi!"
+    explanation: "Berdasarkan Pertemuan 6: 'File Transfer Protokol (FTP) - Adalah suatu aplikasi yang memungkinkan pengguna (user) internet dapat mengambil data (download) di situs-situs website dalam bentuk gambar, foto, suara, artikel, tulisan, aplikasi-aplikasi utility dan sebagainya ke komputer user, ataupun sebaliknya (Upload)'"
   },
   {
     id: 30,
-    category: "Teknologi Informasi",
-    question: "Contoh penerapan Teknologi Informasi di bidang PENDIDIKAN adalah…",
-    options: ["E-Commerce", "E-Learning untuk pembelajaran jarak jauh", "ATM", "Smart card kesehatan"],
+    category: "WWW",
+    question: "Browser internet pertama yang menggunakan konsep GUI adalah…",
+    options: [
+      "Internet Explorer",
+      "Mosaic", 
+      "Netscape Navigator",
+      "Google Chrome"
+    ],
     answer: 1,
-    explanation: "Menurut materi PTIK, dalam bidang pendidikan, Teknologi Informasi diterapkan melalui E-Learning yang memungkinkan proses belajar mengajar jarak jauh menjadi lebih efektif dan efisien. <br><br><strong>🎓 Analogi:</strong> Penerapan TI di berbagai bidang seperti TOOLS KHUSUS untuk pekerjaan berbeda:<br><br><strong>Bidang PENDIDIKAN:</strong> ← JAWABAN<br>• <strong>E-Learning</strong> 💻<br>  → Pembelajaran jarak jauh<br>  → Lebih efektif & efisien<br>  → Internet untuk belajar mengajar<br>  → Contoh: Google Classroom, Moodle, Zoom<br><br><strong>Penerapan TI di Bidang Lain:</strong><br><br>1️⃣ <strong>Bidang KESEHATAN</strong> 🏥<br>• Sistem smart card → Riwayat penyakit pasien<br>• Robot operasi pembedahan<br>• Pencitraan 3D untuk tumor<br><br>2️⃣ <strong>Bidang PERBANKAN</strong> 🏦<br>• E-Banking (cek saldo, transfer)<br>• ATM (penarikan uang, transaksi)<br>• Mobile banking<br><br>3️⃣ <strong>Bidang BISNIS</strong> 💼<br>• E-Commerce (jual-beli online)<br>• Transfer dana elektronik<br>• Sistem inventori otomatis<br><br>4️⃣ <strong>Bidang PEMERINTAHAN</strong> 🏛️<br>• E-Government<br>• Akses kebijakan pemerintah<br>• Pengelolaan lebih efisien<br><br>5️⃣ <strong>Bidang PERUSAHAAN</strong> 🏢<br>• ERP (Enterprise Resource Planning)<br>• Sistem manajemen perusahaan<br>• Efisiensi waktu & biaya<br><br>💡 TI membuat semua bidang lebih efisien!"
+    explanation: "Berdasarkan Pertemuan 6: 'Browser internet pertama yang dipakai adalah Mozaic dengan menggunakan konsep GUI yang dikembangkan oleh NCSA pada tahun 1993.'"
   },
   {
     id: 31,
-    category: "Teknologi Komunikasi",
-    question: "Teknologi Komunikasi menurut materi PTIK adalah…",
-    options: ["Hanya telepon", "Peralatan hardware dalam struktur organisasi yang memungkinkan individu mengumpulkan, memproses, dan saling tukar menukar informasi", "Hanya internet", "Hanya email"],
+    category: "WWW",
+    question: "Jenis domain '.ac' pada website menunjukkan bahwa situs tersebut adalah…",
+    options: [
+      "Perusahaan komersial",
+      "Situs tentang pendidikan/perguruan tinggi", 
+      "Organisasi non-profit",
+      "Situs pemerintah"
+    ],
     answer: 1,
-    explanation: "Menurut materi PTIK Pertemuan 2, Teknologi Komunikasi adalah peralatan perangkat keras (hardware) dalam sebuah struktur organisasi yang memungkinkan setiap individu mengumpulkan, memproses, dan saling tukar menukar informasi. <br><br><strong>📡 Analogi:</strong> Teknologi Komunikasi seperti JALAN TOL INFORMASI:<br><br><strong>Definisi Teknologi Komunikasi:</strong><br>• Peralatan <strong>HARDWARE</strong> 🖥️<br>• Dalam struktur organisasi yang:<br>  1. Mengumpulkan informasi<br>  2. Memproses informasi<br>  3. Saling tukar-menukar informasi<br><br><strong>Telekomunikasi:</strong><br>• Tele = Jauh<br>• Komunikasi = Hubungan<br>• <strong>Telekomunikasi</strong> = Hubungan melalui jarak jauh<br><br><strong>Proses Komunikasi (Schramm):</strong><br><br>1️⃣ <strong>Encode (Penyandi)</strong> 📤<br>   → Komunikator yang punya informasi<br>   → Disajikan dalam bentuk code/sandi<br>   → Tulisan, bahasa lisan, verbal, visual<br><br>2️⃣ <strong>Signal (Sign/Pesan)</strong> 📨<br>   → Berita/pernyataan tertentu<br>   → Bentuk: gerak tangan, mimik, kata lisan, tulisan, gambar<br><br>3️⃣ <strong>Decode (Penerima)</strong> 📥<br>   → Komunikan yang terima pesan<br>   → Harus pahami makna dari pesan<br><br><strong>2 Jenis Proses Komunikasi:</strong><br><br>• <strong>Proses PRIMER</strong> = Langsung tanpa media 🗣️<br>  → Tanpa manipulasi/penggandaan<br>  → Bahasa, gerakan, aba-aba<br><br>• <strong>Proses SEKUNDER</strong> = Dengan bantuan media 📻<br>  → Melipatgandakan penerima pesan<br>  → Mengatasi hambatan fisik<br>  → Contoh: Telepon, HP, radio, satelit<br><br>💡 Teknologi Komunikasi = Tools untuk hubungan jarak jauh!"
+    explanation: "Berdasarkan Pertemuan 6: '.ac - Academic, situs tentang pendidikan/perguruan tinggi'"
   },
   {
     id: 32,
-    category: "Teknologi Komunikasi",
-    question: "Tahap INISIASI dalam proses penerapan teknologi komunikasi mencakup…",
-    options: ["Menggunakan teknologi langsung", "Mengumpulkan informasi tentang teknologi dan merencanakan adopsinya", "Menghapus teknologi lama", "Membeli hardware"],
-    answer: 1,
-    explanation: "Menurut materi PTIK, tahap INISIASI adalah usaha untuk mengumpulkan informasi tentang teknologi komunikasi, memahami dengan seksama dan merencanakannya untuk mengadopsinya. <br><br><strong>📋 Analogi:</strong> Proses Penerapan TI seperti MENIKAH - butuh persiapan matang!<br><br><strong>2 Tahapan Penerapan Teknologi Komunikasi:</strong><br><br><strong>A. Tahap INISIASI (Persiapan)</strong> ← JAWABAN<br><br>1️⃣ <strong>Tingkat Agenda-Setting</strong> 💡<br>   → Munculnya IDE untuk adopsi teknologi<br>   → Untuk menyelesaikan masalah informasi<br><br>2️⃣ <strong>Tingkat Matching</strong> 🔍<br>   → Kecocokan teknologi yang diperlukan<br>   → Kemampuan untuk mengadopsinya<br><br>→ Jika nilai kedua tingkat POSITIF → ADOPSI! ✅<br><br><strong>B. Tahap IMPLEMENTASI (Pelaksanaan)</strong><br><br>1️⃣ <strong>Tingkat Redefining</strong> ⚙️<br>   → Mengatur & menyusun struktur<br>   → Modifikasi mental & kebiasaan<br>   → Persiapan untuk teknologi baru<br><br>2️⃣ <strong>Tingkat Clarifying</strong> 📢<br>   → Meyakinkan semua anggota<br>   → Teknologi tidak asing lagi<br>   → Sosialisasi<br><br>3️⃣ <strong>Tingkat Routinizing</strong> 🔄<br>   → Teknologi sudah jelas<br>   → Menjadi bagian infrastruktur<br>   → Sudah rutin digunakan<br><br><strong>Analogi Lengkap:</strong><br>• INISIASI = Pacaran & tunangan (kenalan, cocok-cocokan) 💑<br>• IMPLEMENTASI = Pernikahan & hidup bersama (atur rumah tangga) 💒<br><br>💡 Tanpa perencanaan matang (inisiasi), teknologi baru akan gagal!"
+    category: "WWW",
+    question: "Struktur alamat web 'http://www.bsi.ac.id/' dijelaskan sebagai…",
+    options: [
+      "http = service transfer, www = alamat informasi, bsi.ac.id = alamat yang dituju",
+      "Hanya nama domain saja", 
+      "Alamat email",
+      "Nomor IP address"
+    ],
+    answer: 0,
+    explanation: "Berdasarkan Pertemuan 6: 'http: Service transfer yang digunakan di dalam web, www : Alamat informasi di internet, bsi.ac.id : Alamat informasi yang dituju atau yang diinginkan dalam internet.'"
   },
   {
     id: 33,
-    category: "Teknologi Komunikasi",
-    question: "Pelaku teknologi komunikasi mencakup semua berikut, KECUALI…",
-    options: ["Pemakai", "Perusahaan penyedia jasa telekomunikasi", "Produsen peralatan komunikasi", "Hacker"],
-    answer: 3,
-    explanation: "Menurut materi PTIK, Pelaku Teknologi Komunikasi terdiri dari: 1) Pemakai, 2) Perusahaan penyedia jasa, 3) Produsen peralatan, 4) Badan pengatur. BUKAN hacker. <br><br><strong>👥 Analogi:</strong> Pelaku Teknologi Komunikasi seperti EKOSISTEM TRANSPORTASI:<br><br><strong>4 Pelaku Teknologi Komunikasi:</strong><br><br>1️⃣ <strong>PEMAKAI (User)</strong> 🧑‍💼<br>   → Membutuhkan penyaluran informasi<br>   → Semakin meningkat jenis & volume<br>   → Contoh: Kita semua yang pakai HP/internet<br><br>2️⃣ <strong>PERUSAHAAN PENYEDIA JASA TELEKOMUNIKASI</strong> 📡<br>   → Pemberi jasa dengan kualitas & harga pantas<br>   → Penyampaian efisien, cepat, murah<br>   → Bertanggung jawab atas kualitas<br>   → Contoh: <strong>Wartel</strong> (Warung Telekomunikasi) ☎️<br>   → Contoh modern: Telkomsel, Indosat, XL<br><br>3️⃣ <strong>PRODUSEN PERALATAN KOMUNIKASI</strong> 🏭<br>   → Menghasilkan peralatan komunikasi<br>   → Kualitas baik & memenuhi kebutuhan<br>   → Bervariasi sesuai permintaan<br>   → Contoh: Samsung, Apple, Huawei<br><br>4️⃣ <strong>BADAN YANG MENGATUR/KOORDINIR</strong> 🏛️<br>   → Mengeluarkan peraturan & standar<br>   → Berdasarkan pengalaman & teknologi<br>   → Ongkos murah, kualitas terjaga<br>   → Contoh: Kemen Kominfo, BRTI<br><br><strong>Saling Ketergantungan:</strong><br>→ Pemakai butuh layanan<br>→ Provider butuh peralatan<br>→ Produsen butuh regulasi<br>→ Regulator jaga kepentingan semua<br><br>💡 Hacker BUKAN pelaku resmi, melainkan ancaman keamanan!"
+    category: "WWW",
+    question: "Webhosting adalah…",
+    options: [
+      "Software browser",
+      "Tempat menyimpan data/dokumen di web server yang tersambung internet", 
+      "Alamat email",
+      "Sistem operasi"
+    ],
+    answer: 1,
+    explanation: "Berdasarkan Pertemuan 6: 'Webhosting adalah tempat seseorang bisa menyimpan data atau dokumen di sebuah web server dan data atau dokumen ini tersambung dengan internet dengan harapan dapat diakses oleh orang lain.'"
   },
   {
     id: 34,
-    category: "Teknologi Informasi",
-    question: "Informasi yang berkualitas menurut Mc. Leod (1997) harus memiliki ciri…",
-    options: ["Hanya akurat saja", "Akurat, tepat waktu, relevan, dan lengkap", "Hanya cepat", "Tidak perlu lengkap"],
+    category: "Internet",
+    question: "Sepuluh Hak & Prinsip Internet yang pertama adalah…",
+    options: [
+      "Hak dan Keadilan Sosial",
+      "Keuniversalan dan Kesetaraan", 
+      "Aksesibilitas",
+      "Kebebasan Berekspresi"
+    ],
     answer: 1,
-    explanation: "Menurut Mc. Leod (1997) dalam materi PTIK, informasi berkualitas harus: 1) Akurat, 2) Tepat waktu, 3) Relevan, 4) Lengkap. <br><br><strong>📊 Analogi:</strong> Informasi berkualitas seperti BERITA JURNALIS PROFESIONAL:<br><br><strong>4 Ciri Informasi Berkualitas:</strong><br><br>1️⃣ <strong>AKURAT</strong> ✅<br>   → Mencerminkan keadaan SEBENARNYA<br>   → Tidak ada kesalahan data<br>   → Seperti: Termometer yang presisi<br>   → Contoh: Saldo rekening harus EXACT<br><br>2️⃣ <strong>TEPAT WAKTU</strong> ⏰<br>   → Tersedia/ada SAAT DIPERLUKAN<br>   → Tidak terlambat (outdated)<br>   → Seperti: Berita breaking news<br>   → Contoh: Info cuaca untuk besok (bukan kemarin)<br><br>3️⃣ <strong>RELEVAN</strong> 🎯<br>   → Sesuai dengan yang DIBUTUHKAN<br>   → Tidak ngalor-ngidul<br>   → Seperti: Jawaban pas dengan pertanyaan<br>   → Contoh: Ditanya harga, jawab harga (bukan warna)<br><br>4️⃣ <strong>LENGKAP</strong> 📋<br>   → Diberikan secara UTUH<br>   → Tidak setengah-setengah<br>   → Seperti: Puzzle yang komplit<br>   → Contoh: Alamat lengkap (jalan, RT/RW, kota, kode pos)<br><br><strong>Definisi Informasi:</strong><br>• Sejumlah DATA yang telah diolah<br>• Melalui pengolahan data<br>• Menguji tingkat kebenarannya<br>• Ketercapaian sesuai kebutuhan<br><br><strong>3 Hal Penting Informasi:</strong><br>1. Hasil pengolahan data<br>2. Memberikan makna<br>3. Berguna/bermanfaat<br><br>💡 Informasi tanpa keempat ciri ini = data sampah!"
+    explanation: "Berdasarkan Pertemuan 6: '1. Keuniversalan dan Kesetaraan - Semua manusia terlahir bebas dan setara dalam harga diri dan hak, yang harus dihargai, dilindungi dan dipenuhi dalam lingkungan daring.'"
   },
   {
     id: 35,
-    category: "Revolusi Industri",
-    question: "Revolusi Industri 4.0 terjadi ketika…",
-    options: ["Ditemukan mesin uap", "Robot dikontrol oleh artificial intelligence tanpa input manusia", "Ditemukan listrik", "Ditemukan internet saja"],
+    category: "Internet",
+    question: "Aktivitas yang DAPAT ditangani oleh Internet menurut materi PTIK adalah…",
+    options: [
+      "Hanya untuk game online",
+      "Sistem pembelajaran jarak jauh, telepon, pencarian kerja, transfer uang", 
+      "Tidak bisa untuk komunikasi",
+      "Hanya untuk hiburan"
+    ],
     answer: 1,
-    explanation: "Menurut materi PTIK Pertemuan 3, Revolusi Industri 4.0 terjadi ketika robot terkoneksi dengan sistem komputer, diperlengkapi dengan machine learning algorithms yang dapat belajar dan mengontrol robot sendiri tanpa input dari human operators (AI). <br><br><strong>🏭 Analogi:</strong> Revolusi Industri seperti EVOLUSI KENDARAAN:<br><br><strong>Sejarah Revolusi Industri:</strong><br><br><strong>REVOLUSI INDUSTRI 1.0</strong> (1764) 💸<br>• Penemuan: <strong>Mesin Uap</strong> (James Watt)<br>• Dampak: Tenaga hewan/manusia → Mesin uap<br>• Era: <strong>MEKANISASI</strong><br>• Seperti: Becak → Mobil pertama<br><br><strong>REVOLUSI INDUSTRI 2.0</strong> (1870) ⚡<br>• Penemuan: <strong>Elektrik & Ban Berjalan</strong><br>• Dampak: Produksi massal (mass production)<br>• Era: <strong>ELEKTRIK</strong><br>• Seperti: Pabrik dengan conveyor belt<br><br><strong>REVOLUSI INDUSTRI 3.0</strong> (1969) 💻<br>• Penemuan: <strong>Internet & Komputer</strong><br>• Dampak: Robot dikontrol human operators<br>• Era: <strong>OTOMATISASI</strong><br>• Seperti: Robot pabrik yang diremote manusia<br><br><strong>REVOLUSI INDUSTRI 4.0</strong> (Sekarang) 🤖 ← JAWABAN<br>• Penemuan: <strong>AI & Machine Learning</strong><br>• Dampak: Robot BELAJAR & kontrol diri SENDIRI<br>• Tanpa input human operators!<br>• Era: <strong>DIGITALISASI</strong><br>• Seperti: Self-driving car, smart factory<br><br><strong>Karakteristik Industri 4.0:</strong><br>✅ Penyatuan dunia online + industri produksi<br>✅ Internet-based society<br>✅ Revolusi industri DIGITAL<br>✅ Integrasi rantai nilai vertikal & horisontal<br>✅ Otomatisasi penuh + IoT<br><br><strong>Dampak:</strong><br>→ Pekerjaan hari ini mungkin tidak ada dalam 50 tahun<br>→ Perlu adaptasi & reskilling<br><br>💡 Industri 4.0 = Robot yang belajar seperti manusia!"
-  },
-  {
-    id: 36,
-    category: "Revolusi Industri",
-    question: "Big Data dalam konteks Revolusi Industri 4.0 digunakan untuk…",
-    options: ["Hanya menyimpan file", "Mengumpulkan perilaku konsumen & meningkatkan keputusan bisnis", "Menghapus data lama", "Membuat virus"],
-    answer: 1,
-    explanation: "Menurut materi PTIK, Big Data mengumpulkan perilaku konsumen (melalui smartphone, GPS, media sosial) untuk meningkatkan decision making, operations, dan monetisasi data dalam bisnis. <br><br><strong>📱 Analogi:</strong> Big Data seperti MATA-MATA DIGITAL yang mengumpulkan semua aktivitas Anda:<br><br><strong>Big Data & Smartphone:</strong><br><br>🔍 <strong>Apa yang Dikumpulkan?</strong><br>• GPS → Pergerakan Anda kemana saja<br>• Internet → Website yang Anda kunjungi<br>• Media Sosial → Siapa teman & apa yang Anda suka<br>• Interaksi konsumen-produsen<br>• Kebiasaan & perilaku<br><br>🎯 <strong>3 Area Utama Penggunaan Big Data dalam Bisnis:</strong><br><br>1️⃣ <strong>IMPROVING DECISION MAKING</strong> 🧠<br>   → Kumpulkan market & customer intelligence<br>   → Insights: Apa yang customer mau?<br>   → Bagaimana mereka beli & gunakan produk?<br>   → Keputusan lebih baik di semua area bisnis<br><br>2️⃣ <strong>IMPROVING OPERATIONS</strong> ⚙️<br>   → Efisiensi & operasi lebih baik<br>   → Track performa mesin<br>   → Optimasi rute delivery<br>   → Rekrut talent terbaik<br>   → Bahkan track gerakan, stress, kesehatan karyawan!<br><br>3️⃣ <strong>MONETIZING DATA</strong> 💰<br>   → Big data jadi produk itu sendiri<br>   → Jual insights ke perusahaan lain<br>   → Revenue dari data analytics<br><br><strong>Fakta Mencengangkan:</strong><br>• Facebook tahu siapa pasangan Anda<br>• Facebook bisa prediksi hubungan akan langgeng atau putus<br>• Facebook tahu tingkat IQ Anda dari 'likes'<br>• Big Data tahu LEBIH BANYAK tentang Anda daripada keluarga!<br><br>💡 Pendapatan global Big Data Analytics 2017 = $150.8 miliar!"
+    explanation: "Berdasarkan Pertemuan 6: 'Sebagian aktivitas yang dapat ditangani oleh Internet: 1. Sistem pembelajaran jarak jauh, 2. Sistem telepon, 3. Pencarian Lowongan kerja, 4. Transfer Uang.'"
   },
 
-  // 37-42 Algoritma & Pemrograman Dasar (Pertemuan 4 - Big Data & AI)
+  // 36-45: Era Disruptif & Firm Life Cycle (Pertemuan 3 lanjutan)
+  {
+    id: 36,
+    category: "Era Disruptif",
+    question: "Menurut Christensen, disruptive technology biasanya…",
+    options: [
+      "Muncul dari perusahaan mapan",
+      "Menawarkan harga lebih mahal", 
+      "Masuk dari segmen pasar yang diabaikan",
+      "Langsung menarget pasar utama"
+    ],
+    answer: 2,
+    explanation: "Berdasarkan Pertemuan 3: 'Disruptive technology yang muncul tersebut, seiring dengan waktu, dikembangkan terus menerus dan pada akhirnya menantang produk-produk yang dihasilkan dengan sustainable technology - attack from below.'"
+  },
   {
     id: 37,
-    category: "Big Data & AI",
-    question: "Big Data dapat didefinisikan dengan karakteristik utama yang dikenal sebagai…",
-    options: ["3V (Volume, Velocity, Variety)", "2D (Data, Database)", "4P (People, Process, Product, Place)", "5S (Sort, Set, Shine, Standardize, Sustain)"],
+    category: "Era Disruptif",
+    question: "Schumpeter's Theory of Creative Destruction menjelaskan…",
+    options: [
+      "Inovasi menghancurkan yang lama dan menciptakan yang baru",
+      "Teknologi harus dihancurkan sebelum dibuat baru", 
+      "Kreativitas harus dihancurkan dulu",
+      "Semua bisnis lama harus dihancurkan"
+    ],
     answer: 0,
-    explanation: "Menurut McKinsey Global (2011), Big Data didefinisikan dengan karakteristik 3V atau lebih: Volume (skala besar), Velocity (distribusi cepat), Variety (keragaman tinggi). <br><br><strong>📊 Analogi:</strong> Big Data seperti SAMUDRA INFORMASI:<br><br><strong>3V Big Data:</strong><br><br>1️⃣ <strong>VOLUME</strong> = Ukuran data yang SANGAT BESAR 🐘<br>   → Terabyte, Petabyte, bahkan Exabyte!<br>   → Seperti: Perpustakaan dengan miliaran buku<br>   → Contoh: Facebook menyimpan 300 juta foto per hari<br><br>2️⃣ <strong>VELOCITY</strong> = Kecepatan data masuk & keluar ⚡<br>   → Data streaming real-time<br>   → Seperti: Air terjun yang terus mengalir<br>   → Contoh: Twitter 6,000 tweet per detik<br><br>3️⃣ <strong>VARIETY</strong> = Keragaman jenis data 🎨<br>   → Terstruktur (database), semi-terstruktur (JSON), tidak terstruktur (video, gambar, teks)<br>   → Seperti: Toko serba ada dengan berbagai produk<br>   → Contoh: Email, foto, sensor IoT, log file<br><br><strong>Perkembangan ke 7V+:</strong><br>4. Veracity (kebenaran/akurasi data)<br>5. Value (nilai bisnis)<br>6. Variability (perubahan data)<br>7. Visualization (tampilan visual)<br><br>💡 Big Data memerlukan teknologi khusus seperti Hadoop, Spark untuk pengolahan!"
+    explanation: "Berdasarkan Pertemuan 3: 'Schumpeter's Theory of Creative Destruction - menjelaskan bahwa proses pembaharuan ekonomi terjadi melalui inovasi yang merupakan mekanisme merusak keseimbangan yang tengah terjadi dan kemudian menciptakan yang baru.'"
   },
   {
     id: 38,
-    category: "Big Data & AI",
-    question: "Artificial Intelligence (AI) menurut Rich and Knight [1991] adalah…",
-    options: ["Komputer yang bisa menggantikan manusia sepenuhnya", "Studi tentang bagaimana membuat komputer melakukan hal yang saat ini dilakukan lebih baik oleh manusia", "Program untuk membuat virus", "Sistem operasi terbaru"],
-    answer: 1,
-    explanation: "AI adalah studi tentang bagaimana membuat komputer melakukan hal-hal yang pada saat ini dapat dilakukan lebih baik oleh manusia. <br><br><strong>🤖 Analogi:</strong> AI seperti MURID KOMPUTER yang belajar dari manusia:<br><br><strong>Mengapa Kita Memerlukan AI?</strong><br>• Hampir semua permasalahan dipecahkan dengan bantuan komputer<br>• Masalah semakin kompleks, tidak mungkin manual lagi<br>• Tidak ada keterbatasan hardware lagi<br>• Keinginan manusia: komputer bertindak seperti manusia<br><br><strong>4 Kategori Definisi AI:</strong><br><br>1️⃣ <strong>Systems that think like humans</strong> 🧠<br>   → Berpikir seperti manusia<br>   → Contoh: Neural Networks yang meniru otak<br><br>2️⃣ <strong>Systems that think rationally</strong> 🤔<br>   → Berpikir secara rasional/logis<br>   → Contoh: Expert Systems, Logic Programming<br><br>3️⃣ <strong>Systems that act like humans</strong> 🎭<br>   → Bertindak seperti manusia (Turing Test)<br>   → Contoh: Chatbot, Robot humanoid<br><br>4️⃣ <strong>Systems that act rationally</strong> ⚙️<br>   → Bertindak rasional untuk mencapai goal<br>   → Contoh: Self-driving car, Recommendation system<br><br><strong>Contoh AI dalam Kehidupan:</strong><br>✅ Face Recognition (Face ID)<br>✅ Voice Assistant (Siri, Google Assistant)<br>✅ Recommendation (Netflix, Spotify)<br>✅ Autonomous Vehicles<br>✅ Medical Diagnosis<br><br>💡 AI bukan pengganti manusia, tapi TOOLS untuk membantu manusia bekerja lebih baik!"
+    category: "Firm Life Cycle",
+    question: "Tahapan dalam daur hidup perusahaan menurut Pashley & Philippatos adalah…",
+    options: [
+      "Lahir, Tumbuh, Dewasa, Turun",
+      "Startup, Scale-up, Mature, Exit", 
+      "Rintisan, Berkembang, Mapan, Bangkrut",
+      "Plan, Do, Check, Action"
+    ],
+    answer: 0,
+    explanation: "Berdasarkan Pertemuan 3: 'tahapan daur hidup perusahaan (firm life cycle) dibagi ke dalam empat tahapan, yaitu tahap kelahiran (birth or introduction phase), tahap pertumbuhan (growth phase), tahap kedewasaan (maturity phase) dan tahap penurunan (decline phases), Pashley & Philippatos (1990).'"
   },
   {
     id: 39,
-    category: "Big Data & AI",
-    question: "Dalam konteks Big Data, perbedaan antara Data, Information, dan Knowledge adalah…",
-    options: ["Semuanya sama saja", "Data adalah fakta mentah, Information adalah data yang direkam, Knowledge adalah peta mental kita", "Data lebih penting dari Knowledge", "Information hanya untuk komputer"],
+    category: "Firm Life Cycle",
+    question: "Perusahaan pada tahap mature biasanya fokus pada…",
+    options: [
+      "Eksperimen teknologi baru",
+      "Mempertahankan konsumen utama", 
+      "Mencari pasar baru",
+      "Restrukturisasi total"
+    ],
     answer: 1,
-    explanation: "Data adalah fakta (facts, description of the world). Information adalah captured data & knowledge pada satu waktu tertentu. Knowledge adalah personal map/model dunia dalam otak kita. <br><br><strong>🧩 Analogi:</strong> Data vs Information vs Knowledge seperti BAHAN MASAKAN:<br><br><strong>DATA</strong> = Bahan mentah 🥕<br>   → Fakta murni, belum diolah<br>   → Contoh: '25', 'Jakarta', 'Hujan'<br>   → Seperti: Wortel, tomat, bawang mentah<br><br><strong>INFORMATION</strong> = Resep masakan 📝<br>   → Data yang sudah direkam & diberi konteks<br>   → Contoh: 'Suhu Jakarta hari ini 25°C dengan hujan'<br>   → Seperti: Resep yang tertulis 'Tumis bawang, masukkan wortel'<br><br><strong>KNOWLEDGE</strong> = Keahlian chef 👨‍🍳<br>   → Pemahaman di otak, tidak bisa disimpan selain di otak<br>   → Contoh: Chef tahu kapan menambah garam tanpa lihat resep<br>   → Built dari pengalaman menggunakan information & data<br><br><strong>Alur Transformasi:</strong><br>Data → [PROSES] → Information → [PEMBELAJARAN] → Knowledge<br><br><strong>Contoh Praktis:</strong><br>• <strong>Data:</strong> '01234567' (angka random)<br>• <strong>Information:</strong> '0123-4567 adalah nomor telepon Ani'<br>• <strong>Knowledge:</strong> 'Saya tahu cara menelpon Ani jika darurat'<br><br>💡 Big Data mengumpulkan DATA & INFORMATION, tapi KNOWLEDGE tetap di otak manusia!"
+    explanation: "Berdasarkan Pertemuan 3: 'Bagi perusahaan yang tengah berada pada tahapan dewasa, yang terpenting adalah mempertahankan konsumen utama dengan sustaining technology.'"
   },
   {
     id: 40,
-    category: "Big Data & AI",
-    question: "Teknologi Big Data dibagi menjadi 2 kelompok pemrosesan, yaitu…",
-    options: ["Online dan Offline processing", "Batch processing dan Streaming processing", "Fast dan Slow processing", "Manual dan Automatic processing"],
+    category: "Generasi Milenial",
+    question: "Generasi Milenial dikenal sebagai generasi yang…",
+    options: [
+      "Tidak menggunakan teknologi",
+      "Bergaul erat dengan teknologi informasi", 
+      "Hanya menggunakan telepon kabel",
+      "Menghindari media sosial"
+    ],
     answer: 1,
-    explanation: "Untuk Volume Data, Teknologi Big Data dibagi menjadi Batch Processing (data at rest) dan Streaming Processing (data in motion). <br><br><strong>⚡ Analogi:</strong> Batch vs Streaming seperti cara menonton film:<br><br><strong>BATCH PROCESSING</strong> = Nonton film yang sudah selesai di Netflix 🎬<br>   → Menganalisis data yang sudah settle (data at rest)<br>   → Diproses pada satu waktu tertentu<br>   → Seperti: Analisis penjualan bulan lalu<br>   → Tools: Hadoop MapReduce, Apache Spark Batch<br>   → Contoh: Laporan bulanan, data warehouse ETL<br><br><strong>STREAMING PROCESSING</strong> = Nonton siaran langsung TV 📺<br>   → Menganalisis data yang terus update real-time (data in motion)<br>   → Diproses saat data masuk<br>   → Seperti: Monitor traffic website real-time<br>   → Tools: Apache Kafka, Apache Flink, Storm<br>   → Contoh: Deteksi fraud kartu kredit, stock trading, social media monitoring<br><br><strong>Perbedaan:</strong><br><br>| Aspek | Batch | Streaming |<br>|-------|-------|-----------|<br>| Data | Kumpulan data besar | Data continuous |<br>| Waktu | Periodic (jam/hari) | Real-time (detik) |<br>| Latency | Tinggi (lambat) | Rendah (cepat) |<br>| Use Case | Reporting, Analytics | Monitoring, Alerts |<br><br>💡 Modern Big Data sering kombinasi keduanya: Lambda Architecture!"
+    explanation: "Berdasarkan Pertemuan 3: 'Generasi Milenial adalah generasi yang 'bergaul erat' dengan teknologi komunikasi dan informasi, yaitu: melalui internet berselancar di dunia maya dalam memperoleh informasi dan berkomunikasi melalui sosial media.'"
   },
+
+  // 41-50: Lanjutan berbagai topik
   {
     id: 41,
-    category: "Big Data & AI",
-    question: "Sudut pandang Kecerdasan Buatan (AI) dari sisi bisnis adalah…",
-    options: ["Kumpulan peralatan powerful untuk menyelesaikan masalah bisnis", "Hanya untuk penelitian akademik", "Cara membuat robot", "Sistem operasi canggih"],
+    category: "Generasi Milenial",
+    question: "Karakter unggul generasi milenial menurut Alvara Research Center adalah…",
+    options: [
+      "Kreatif, Percaya Diri, Terkoneksi",
+      "Tradisional, Patuh, Individual", 
+      "Konservatif, Tertutup, Lokal",
+      "Kaku, Formal, Hierarkis"
+    ],
     answer: 0,
-    explanation: "Dari sudut pandang bisnis, Kecerdasan Buatan adalah kumpulan peralatan yang sangat powerful dan metodologis dalam menyelesaikan masalah bisnis. <br><br><strong>💼 Analogi:</strong> AI untuk bisnis seperti SWISS ARMY KNIFE - tools serba guna:<br><br><strong>4 Sudut Pandang AI:</strong><br><br>1️⃣ <strong>Sudut Pandang KECERDASAN</strong> 🧠<br>   → AI mampu membuat mesin menjadi cerdas<br>   → Berbuat seperti yang dilakukan manusia<br><br>2️⃣ <strong>Sudut Pandang PENELITIAN</strong> 🔬<br>   → Studi bagaimana membuat komputer melakukan sesuatu sebaik manusia<br>   → Fokus: Inovasi & eksperimen<br><br>3️⃣ <strong>Sudut Pandang BISNIS</strong> 💼 ← JAWABAN<br>   → <strong>Kumpulan peralatan powerful untuk solve business problems</strong><br>   → Fokus: ROI, efisiensi, profit<br>   → Contoh aplikasi bisnis:<br>     • Customer service chatbot (hemat biaya)<br>     • Recommendation engine (boost sales)<br>     • Fraud detection (kurangi kerugian)<br>     • Predictive maintenance (hindari downtime)<br>     • Supply chain optimization<br><br>4️⃣ <strong>Sudut Pandang PEMROGRAM</strong> 💻<br>   → Studi tentang pemrograman simbolik, problem solving, searching<br>   → Fokus: Implementasi teknis<br><br><strong>AI dalam Bisnis Real-World:</strong><br>✅ Netflix: Recommendation system → 80% views dari AI<br>✅ Amazon: Demand forecasting → optimasi inventory<br>✅ Bank: Credit scoring → kurangi bad debt<br>✅ E-commerce: Dynamic pricing → maximize revenue<br><br>💡 AI bukan magic, tapi toolkit bisnis untuk competitive advantage!"
+    explanation: "Berdasarkan Pertemuan 3: 'hasil penelitian Alvara Research Center ... mengungkapkan tiga karakter unggul generasi milenial, yaitu 1.creative: berpikir out of the box, kaya ide dan gagasan, 2.confidence: percaya diri sehingga berani mengungkapkan pendapat, 3.connected: pandai bersosialisasi dalam komunitasnya.'"
   },
   {
     id: 42,
-    category: "Big Data & AI",
-    question: "Sejarah AI dimulai dengan program checker playing oleh Samuel (1963) yang unik karena…",
-    options: ["Hanya bisa bermain catur", "Menggunakan pengalamannya untuk meningkatkan kemampuan bermain", "Tidak memerlukan listrik", "Bisa berbicara dengan manusia"],
-    answer: 1,
-    explanation: "Samuel (1963) menulis checker playing program yang tidak hanya untuk bermain game, tetapi juga menggunakan pengalamannya pada permainan untuk mendukung/meningkatkan kemampuan sebelumnya (machine learning pertama!). <br><br><strong>🎮 Analogi:</strong> Program Samuel seperti ANAK KECIL yang belajar dari pengalaman:<br><br><strong>Program Checker Samuel:</strong><br>• Game 1: Main checker, KALAH → Catat strategi lawan<br>• Game 2: Coba strategi baru, KALAH lagi → Catat lagi<br>• Game 3: Kombinasi strategi, MENANG! → Ingat strategi ini<br>• Game 100: Makin pintar, bisa kalahkan pemain handal! 🏆<br><br><strong>Ini adalah MACHINE LEARNING pertama!</strong><br>→ Program yang bisa BELAJAR dari pengalaman<br>→ Tidak diprogram eksplisit untuk setiap situasi<br>→ Improve performance over time<br><br><strong>Tonggak Sejarah AI Lainnya:</strong><br><br>• <strong>1963 - Samuel's Checker</strong> ✅<br>  → Machine learning pertama<br><br>• <strong>1963 - Gelernter's Theorem Prover</strong><br>  → Membuktikan teorema geometri<br><br>• <strong>Logic Theorist</strong><br>  → Membuktikan teorema matematika dari buku Whitehead & Russell<br><br>• <strong>General Problem Solver (GPS)</strong><br>  → Pemecahan masalah umum dengan abstraksi<br><br><strong>Mengapa Catur & Checker Populer untuk AI?</strong><br>• Aturan jelas & formal (seperti dunia nyata tapi lebih sederhana)<br>• Kompleks tapi terbatas<br>• Mudah diukur (menang/kalah)<br>• Testing ground untuk intelligent behavior<br><br>💡 Dari checker di 1963 → AlphaGo mengalahkan juara Go dunia di 2016!"
+    category: "Internet",
+    question: "Alamat IP pada materi PTIK dijelaskan berupa susunan angka dengan format…",
+    options: [
+      "a.b.c.d dengan nilai 0-255",
+      "Hanya huruf kapital", 
+      "Angka 0-999",
+      "Format tanggal"
+    ],
+    answer: 0,
+    explanation: "Berdasarkan Pertemuan 6: 'Alamat IP berupa susunan angka : a.b.c.d. Dengan masing-masing a,b,c,d berupa sebuah bilangan 0 sampai dengan 255.'"
   },
-
-  // 43-46 Multimedia & Format File (Dari materi Pertemuan 4)
   {
     id: 43,
-    category: "Multimedia",
-    question: "Salah satu karakteristik utama Revolusi Industri 4.0 menurut materi PTIK adalah…",
-    options: ["Mesin uap", "Penyatuan dunia online dan industri produksi", "Ban berjalan", "Hanya internet"],
+    category: "Jaringan Komputer",
+    question: "Kelebihan jaringan Peer-to-Peer adalah…",
+    options: [
+      "Keamanan tinggi",
+      "Implementasi murah dan mudah", 
+      "Cocok untuk skala besar",
+      "Memerlukan administrator khusus"
+    ],
     answer: 1,
-    explanation: "Karakteristik Revolusi Industri 4.0 adalah penyatuan dunia online dengan dunia industri produksi, menciptakan internet-based society. <br><br><strong>🏭 Analogi:</strong> Industri 4.0 seperti PABRIK yang BERPIKIR SENDIRI:<br><br><strong>4 Revolusi Industri:</strong><br><br>1️⃣ <strong>Industri 1.0 (1764)</strong> 💸<br>   • Mesin uap (James Watt)<br>   • Tenaga manusia/hewan → mesin<br>   • Era MEKANISASI<br><br>2️⃣ <strong>Industri 2.0 (1870)</strong> ⚡<br>   • Listrik & ban berjalan<br>   • Produksi massal (mass production)<br>   • Era ELEKTRIK<br><br>3️⃣ <strong>Industri 3.0 (1969)</strong> 💻<br>   • Internet & komputer<br>   • Robot dikontrol human operators<br>   • Era OTOMATISASI<br><br>4️⃣ <strong>Industri 4.0 (Sekarang)</strong> 🤖 ← JAWABAN<br>   • AI & Machine Learning<br>   • Robot belajar & kontrol diri sendiri<br>   • Era DIGITALISASI<br><br><strong>Karakteristik Industri 4.0:</strong><br><br>✅ <strong>Penyatuan dunia ONLINE + Industri PRODUKSI</strong><br>   → Factory terhubung ke cloud<br>   → Real-time monitoring & control<br>   → Data-driven decision making<br><br>✅ <strong>Internet-based society</strong><br>   → IoT (Internet of Things)<br>   → Smart factory, smart city<br>   → Semua device terhubung<br><br>✅ <strong>Revolusi Industri DIGITAL</strong><br>   → Transformasi digital menyeluruh<br>   → Paperless, automated, AI-powered<br><br>✅ <strong>Integrasi rantai nilai vertikal & horisontal</strong><br>   → Supplier → Produsen → Distributor → Customer<br>   → Semua terhubung seamlessly<br><br><strong>Teknologi Kunci Industri 4.0:</strong><br>• Big Data & Analytics 📊<br>• AI & Machine Learning 🧠<br>• IoT (Internet of Things) 📡<br>• Cloud Computing ☁️<br>• Cyber-Physical Systems 🤖<br>• Augmented Reality (AR) 🥽<br><br><strong>Contoh Nyata:</strong><br>• Tesla factory → Robot yang belajar & optimize sendiri<br>• Amazon warehouse → Fully automated<br>• Smart home → AC, lampu, TV terkoneksi internet<br><br>💡 Industri 4.0 = Fusion of physical & digital world!"
+    explanation: "Berdasarkan Pertemuan 5: 'kelebihan jaringan peer-to-peer adalah: Implementasinya murah dan mudah. Tidak memerlukan software administrasi jaringan khusus. Tidak membutuhkan administrator jaringan'"
   },
   {
     id: 44,
-    category: "Big Data",
-    question: "Karakteristik '3V' Big Data mencakup…",
-    options: ["Volume, Velocity, Variety", "Video, Voice, Visual", "Virtual, Verified, Valid", "Version, Vendor, Value"],
-    answer: 0,
-    explanation: "Menurut materi PTIK Pertemuan 4, Big Data memiliki karakteristik 3V: Volume (jumlah besar), Velocity (kecepatan tinggi), dan Variety (beragam jenis data). <br><br><strong>📊 Analogi:</strong> Big Data seperti LAUTAN INFORMASI:<br><br><strong>3V Big Data:</strong><br><br>1️⃣ <strong>VOLUME</strong> = Jumlah data SANGAT BESAR 🌊<br>   → Terabytes hingga Petabytes<br>   → Tidak bisa diproses database biasa<br>   → Contoh:<br>     • Facebook: 4 Petabytes foto baru per hari<br>     • YouTube: 500 jam video diupload per menit<br>     • Twitter: 500 juta tweets per hari<br><br>2️⃣ <strong>VELOCITY</strong> = Kecepatan SANGAT TINGGI ⚡<br>   → Data datang secara real-time/streaming<br>   → Harus diproses cepat<br>   → Contoh:<br>     • Sensor IoT: Data setiap detik<br>     • Stock trading: Ribuan transaksi per detik<br>     • GPS location: Update posisi real-time<br><br>3️⃣ <strong>VARIETY</strong> = Jenis data BERAGAM 🎨<br>   → Structured (database, Excel)<br>   → Semi-structured (JSON, XML)<br>   → Unstructured (teks, gambar, video, audio)<br>   → Contoh:<br>     • Email (teks)<br>     • Foto Instagram (image)<br>     • Video call (video + audio)<br>     • Sensor suhu (numeric)<br><br><strong>Extended V's (kadang ditambahkan):</strong><br><br>4️⃣ <strong>VERACITY</strong> = Kebenaran/kualitas data 🎯<br>   → Apakah data akurat?<br>   → Noise vs signal<br><br>5️⃣ <strong>VALUE</strong> = Nilai/manfaat data 💰<br>   → Data harus bisa jadi insight<br>   → ROI dari Big Data<br><br><strong>Perbedaan Big Data vs Traditional Data:</strong><br><br>| Aspek | Traditional | Big Data |<br>|-------|------------|----------|<br>| Size | Gigabytes | Petabytes+ |<br>| Speed | Batch (nightly) | Real-time |<br>| Type | Structured | All types |<br>| Tools | Excel, SQL | Hadoop, Spark |<br><br><strong>Contoh Penggunaan Big Data:</strong><br>• Netflix → Rekomendasi film (analisis viewing habits)<br>• Gojek → Optimasi rute driver real-time<br>• Spotify → Playlist personal (analisis musik favorites)<br>• Bank → Deteksi fraud (pattern recognition)<br><br>💡 Big Data = Too big, too fast, too diverse untuk tools tradisional!"
+    category: "Revolusi Industri",
+    question: "Revolusi Industri 2.0 ditandai dengan penemuan…",
+    options: [
+      "Mesin uap",
+      "Listrik dan ban berjalan", 
+      "Internet",
+      "Artificial Intelligence"
+    ],
+    answer: 1,
+    explanation: "Berdasarkan Pertemuan 3: 'Revolusi Industri 2.0 diawali dari hasil penelitian yang dilakukan oleh Faraday & Maxwell sehubungan penggabungan kekuatan antara sistem magnetik dengan sistem elektrik yang menggerakan mesin proses produksi serta ditemukannya ban berjalan'"
   },
   {
     id: 45,
-    category: "Big Data",
-    question: "Perbedaan Batch Processing dan Streaming Processing dalam Big Data adalah…",
-    options: ["Tidak ada perbedaan", "Batch memproses data secara berkala, Streaming memproses secara real-time", "Batch lebih cepat", "Streaming hanya untuk audio"],
-    answer: 1,
-    explanation: "Menurut materi PTIK, Batch Processing memproses data dalam interval waktu tertentu (berkala), sedangkan Streaming Processing memproses data secara continuous dan real-time. <br><br><strong>⚙️ Analogi:</strong> Batch vs Streaming seperti CUCI BAJU vs SHOWER:<br><br><strong>2 Jenis Pemrosesan Big Data:</strong><br><br>🗓️ <strong>BATCH PROCESSING</strong> = Cuci baju sekaligus seminggu sekali 🧺<br><br><strong>Karakteristik:</strong><br>• Data dikumpulkan dulu<br>• Diproses dalam interval tertentu (per jam/hari/minggu)<br>• Tidak urgent/real-time<br>• High latency (delay OK)<br>• Throughput tinggi (bisa proses jutaan record)<br><br><strong>Kapan Digunakan:</strong><br>✅ Laporan bulanan (payroll, sales report)<br>✅ Data warehouse ETL (Extract-Transform-Load)<br>✅ Machine learning model training<br>✅ Log analysis (analisa log kemarin)<br>✅ Backup & archiving<br><br><strong>Contoh:</strong><br>→ Bank proses transaksi harian setiap malam jam 12<br>→ E-commerce generate sales report end of month<br>→ University update nilai mahasiswa setiap semester<br><br><strong>Tools:</strong><br>• Apache Hadoop MapReduce<br>• Apache Spark (batch mode)<br>• Traditional databases<br><br>⚡ <strong>STREAMING PROCESSING</strong> = Shower terus-menerus 🚿 ← JAWABAN<br><br><strong>Karakteristik:</strong><br>• Data diproses SEGERA saat datang<br>• Continuous & real-time<br>• Low latency (instant response)<br>• Process data in-flight (on the fly)<br><br><strong>Kapan Digunakan:</strong><br>✅ Fraud detection (detect kartu kredit dicuri NOW)<br>✅ Stock trading (harga saham real-time)<br>✅ IoT sensor monitoring (suhu, tekanan)<br>✅ Social media trends (trending topics Twitter)<br>✅ Ride-hailing (Gojek match driver-customer real-time)<br>✅ Live video streaming (YouTube live)<br><br><strong>Contoh:</strong><br>→ Gojek: Driver location update setiap detik<br>→ Netflix: Video playback adaptive quality real-time<br>→ Bank: Block ATM card jika detect suspicious activity<br><br><strong>Tools:</strong><br>• Apache Kafka<br>• Apache Flink<br>• Apache Storm<br>• Spark Streaming<br><br><strong>Perbandingan:</strong><br><br>| Aspek | Batch | Streaming |<br>|-------|-------|-----------|<br>| Timing | Scheduled | Real-time |<br>| Latency | High (hours/days) | Low (seconds) |<br>| Use Case | Historical analysis | Live monitoring |<br>| Complexity | Simple | Complex |<br>| Cost | Lower | Higher |<br><br>💡 Batch = Analisa kemarin, Streaming = Action sekarang!"
+    category: "Revolusi Industri",
+    question: "Revolusi Industri 3.0 dimulai dengan penemuan…",
+    options: [
+      "Mesin uap",
+      "Listrik", 
+      "Internet dan komputer",
+      "Robot AI"
+    ],
+    answer: 2,
+    explanation: "Berdasarkan Pertemuan 3: 'Revolusi Industri 3.0 dimulai dari temuan internet dan komputer yang mempengaruhi pola komunikasi dan peredaran informasi di masyarakat.'"
   },
   {
     id: 46,
-    category: "Big Data",
-    question: "Menurut materi PTIK, Big Data dari perspektif bisnis digunakan untuk…",
-    options: ["Hanya menyimpan data", "Decision making, improving operations, dan monetizing data", "Menghapus data lama", "Membuat website"],
-    answer: 1,
-    explanation: "Dari perspektif bisnis, Big Data digunakan untuk: 1) Improving decision making, 2) Improving operations, 3) Monetizing data - menjadikan data sebagai aset yang bernilai. <br><br><strong>💼 Analogi:</strong> Big Data untuk bisnis seperti TAMBANG EMAS DIGITAL:<br><br><strong>3 Area Utama Big Data dalam Bisnis:</strong><br><br>1️⃣ <strong>IMPROVING DECISION MAKING</strong> 🧠 ← Keputusan lebih baik<br><br><strong>Kumpulkan Market & Customer Intelligence:</strong><br>• Apa yang customer mau?<br>• Bagaimana mereka beli & gunakan produk?<br>• Trend pasar apa yang sedang naik?<br>• Kompetitor strategi apa?<br><br><strong>Insights untuk Keputusan:</strong><br>→ Produk apa yang harus diproduksi?<br>→ Harga berapa yang optimal?<br>→ Marketing campaign apa yang efektif?<br>→ Ekspansi ke kota mana?<br><br><strong>Contoh:</strong><br>• Netflix: Analisa viewing data → Putuskan produksi serial apa<br>• Tokopedia: Analisa search queries → Stock produk populer<br>• Starbucks: Analisa lokasi & demografi → Buka toko di area strategis<br><br>2️⃣ <strong>IMPROVING OPERATIONS</strong> ⚙️ ← Operasi lebih efisien<br><br><strong>Efisiensi & Operasi Lebih Baik:</strong><br>• Track performa mesin (predictive maintenance)<br>• Optimasi rute delivery (hemat BBM & waktu)<br>• Rekrut talent terbaik (HR analytics)<br>• Monitor karyawan (produktivitas, stress, kesehatan)<br><br><strong>Contoh:</strong><br>• Gojek: Algoritma assign driver terdekat → Pickup cepat<br>• Amazon warehouse: Robot optimasi jalur → Packing lebih cepat<br>• Airlines: Predictive maintenance pesawat → Hindari breakdown<br>• Factory: IoT sensors → Deteksi mesin mau rusak sebelum breakdown<br><br>3️⃣ <strong>MONETIZING DATA</strong> 💰 ← Data = Produk<br><br><strong>Big Data Jadi Produk Itu Sendiri:</strong><br>• Jual insights ke perusahaan lain<br>• Data analytics as a service<br>• Revenue stream baru dari data<br><br><strong>Contoh:</strong><br>• Google: Jual data perilaku user ke advertiser → Targeted ads<br>• Facebook: Data demografi & interest → Ads platform ($100B revenue!)<br>• Credit card companies: Jual data spending patterns ke merchant<br>• Weather.com: Jual data cuaca ke farmers, airlines, logistics<br><br><strong>Fakta Bisnis Big Data:</strong><br>📊 Global Big Data revenue 2017: <strong>$150.8 BILLION</strong><br>📈 Projected 2027: <strong>$420+ BILLION</strong><br><br><strong>Value Chain Big Data:</strong><br>Raw Data → Clean & Process → Analyze → Insights → Action → Profit 💸<br><br>💡 Data is the new oil - yang paling bisa extract value-nya yang menang!"
+    category: "Internet",
+    question: "Isi e-mail yang menyatakan orang yang mendapat tembusan tetapi penerima utama TIDAK tahu adalah…",
+    options: [
+      "To",
+      "Cc (Carbon Copy)", 
+      "Bcc (Blind Carbon Copy)",
+      "Subject"
+    ],
+    answer: 2,
+    explanation: "Berdasarkan Pertemuan 6: 'Bcc : singkatan dari blind carbon copy, menyatakan orang yang mendapatkan tembusan tetapi yang disebut dalam to tidak mengetahui bahwa alamat e-mail ditembuskan ke orang lain'"
   },
-
-  // 47-50 Cloud & Email (Pertemuan 6 - Internet & Komunikasi)
   {
     id: 47,
-    category: "Internet & Email",
-    question: "Kegunaan internet menurut materi PTIK mencakup semua hal berikut, KECUALI…",
-    options: ["Informasi didapat lebih cepat dan murah", "Sebagai media promosi dan penelitian", "Mengurangi biaya kertas (paperless environment)", "Menggantikan sepenuhnya interaksi tatap muka"],
-    answer: 3,
-    explanation: "Internet memiliki banyak kegunaan produktif, tetapi TIDAK menggantikan sepenuhnya interaksi manusia. <br><br><strong>🌐 Analogi:</strong> Internet seperti JALAN TOL INFORMASI:<br><br><strong>✅ Kegunaan Internet (dari materi PTIK):</strong><br><br>1️⃣ <strong>Informasi lebih cepat & murah</strong> 💨<br>   → Google search instant dibanding ke perpustakaan<br>   → Berita real-time<br><br>2️⃣ <strong>Paperless environment</strong> 🌳<br>   → Mengurangi biaya kertas & pemasaran<br>   → E-invoice, e-ticket, e-document<br>   → Ramah lingkungan<br><br>3️⃣ <strong>Media promosi</strong> 📢<br>   → Website perusahaan<br>   → Social media marketing<br>   → E-commerce (Tokopedia, Shopee)<br><br>4️⃣ <strong>Komunikasi interaktif</strong> 💬<br>   → E-mail (surat elektronik)<br>   → Video Conference (Zoom, Meet)<br>   → Internet Relay Chat (IRC)<br>   → Internet Phone (VoIP)<br><br>5️⃣ <strong>Research & Development</strong> 🔬<br>   → Alat penelitian<br>   → Kolaborasi global<br>   → Database ilmiah<br><br>6️⃣ <strong>Pertukaran data</strong> 📊<br>   → FTP (File Transfer Protocol)<br>   → Cloud storage<br>   → Backup online<br><br><strong>❌ Yang BUKAN kegunaan:</strong><br>• Menggantikan SEPENUHNYA interaksi tatap muka<br>• Internet MELENGKAPI, bukan menggantikan total<br>• Manusia tetap butuh interaksi sosial langsung<br><br>💡 Internet = tools untuk efisiensi, bukan pengganti kemanusiaan!"
+    category: "Internet",
+    question: "Untuk mendapatkan informasi lebih luas di internet, kita dapat menggunakan…",
+    options: [
+      "Modem saja",
+      "Search Engine (mesin pencari)", 
+      "Hanya browser",
+      "Printer"
+    ],
+    answer: 1,
+    explanation: "Berdasarkan Pertemuan 6: 'Search engine (mesin pencari elektronik) Adalah aplikasi yang terdapat situs-situs milik perusahaan besar yang memungkinkan kita dapat memperoleh informasi yang lebih luas dan banyak'"
   },
   {
     id: 48,
-    category: "Internet & Email",
-    question: "Isi e-mail yang menyatakan orang yang mendapat tembusan tetapi penerima utama TIDAK tahu adalah…",
-    options: ["To", "Cc (Carbon Copy)", "Bcc (Blind Carbon Copy)", "Subject"],
-    answer: 2,
-    explanation: "Bcc (Blind Carbon Copy) menyembunyikan daftar penerima tembusan dari penerima lain, berbeda dengan Cc yang terlihat semua orang. <br><br><strong>📧 Analogi:</strong> Field email seperti sistem SURAT RESMI:<br><br><strong>Isi E-mail (dari materi PTIK):</strong><br><br>1️⃣ <strong>To</strong> = Penerima utama surat 📬<br>   → Alamat e-mail yang dituju<br>   → Orang yang harus ACTION<br>   → Contoh: boss@perusahaan.com<br>   → Semua orang lihat<br><br>2️⃣ <strong>Cc (Carbon Copy)</strong> = Tembusan TERBUKA 📋<br>   → Orang yang perlu TAHU (FYI - For Your Information)<br>   → SEMUA penerima bisa lihat siapa saja yang di-Cc<br>   → Contoh: team@perusahaan.com<br>   → Transparan<br><br>3️⃣ <strong>Bcc (Blind Carbon Copy)</strong> = Tembusan RAHASIA 🕵️ ← JAWABAN<br>   → Orang yang perlu tahu tapi DIRAHASIAKAN<br>   → Penerima di 'To' & 'Cc' TIDAK TAHU ada Bcc<br>   → Penerima Bcc juga tidak lihat Bcc lainnya<br>   → Privacy terjaga!<br>   → Contoh: Kirim newsletter ke 100 orang tanpa expose email mereka<br><br>4️⃣ <strong>Subject</strong> = Judul surat 📝<br>   → Inti dari surat<br>   → Membantu penerima prioritaskan email<br><br><strong>Contoh Praktis:</strong><br><code>To: client@company.com<br>Cc: manager@mycompany.com ← Client tahu manager diberi tahu<br>Bcc: director@mycompany.com ← Client TIDAK tahu director baca email<br>Subject: Proposal Kerjasama Q1 2024</code><br><br><strong>Kapan Pakai Bcc?</strong><br>✅ Newsletter massal (protect privacy)<br>✅ Laporan sensitif ke atasan<br>✅ Dokumentasi diam-diam<br><br>💡 Bcc = Invisible ink - ada tapi tidak terlihat!"
+    category: "WWW",
+    question: "WWW (World Wide Web) awalnya dikembangkan pada tahun 1990 di…",
+    options: [
+      "MIT (Massachusetts Institute of Technology)",
+      "CERN (Laboratorium Fisika Partikel)", 
+      "NASA",
+      "Microsoft"
+    ],
+    answer: 1,
+    explanation: "Berdasarkan Pertemuan 6: 'World Wide Web (WWW) - Awalnya dikembangkan pada tahun 1990 di CERN (Laboratorium Fisika Partikel) di Swiss.'"
   },
   {
     id: 49,
-    category: "Internet & Email",
-    question: "Untuk mendapatkan informasi lebih luas di internet, kita dapat menggunakan…",
-    options: ["Modem saja", "Search Engine (mesin pencari)", "Hanya browser", "Printer"],
+    category: "Teknologi Informasi",
+    question: "Teknologi Informasi menurut Haaq dan Keen adalah…",
+    options: [
+      "Hanya hardware komputer",
+      "Seperangkat alat yang membantu bekerja dengan informasi dan melakukan tugas pemrosesan informasi", 
+      "Hanya software",
+      "Hanya internet"
+    ],
     answer: 1,
-    explanation: "Search Engine (mesin pencari elektronik) seperti Google, Yahoo memungkinkan kita mencari informasi dari ratusan ribu website. <br><br><strong>🔍 Analogi:</strong> Search Engine seperti PERPUSTAKAAN RAKSASA dengan PUSTAKAWAN SUPER:<br><br><strong>SEARCH ENGINE</strong> = Perpustakaan digital dengan AI librarian 📚<br>   → Mengindeks RATUSAN JUTA website<br>   → Mencari informasi dalam DETIK<br>   → Ranking hasil berdasarkan relevansi<br><br><strong>Situs Search Engine (dari materi PTIK):</strong><br>• <strong>www.google.com</strong> → Paling populer! 🏆<br>• <strong>www.yahoo.com</strong> → Portal klasik<br>• <strong>www.altavista.com</strong> → Perintis (sekarang mati)<br>• <strong>www.plasa.com</strong> → Lokal Indonesia<br>• Bing, DuckDuckGo, dll<br><br><strong>Cara Menggunakan Search Engine:</strong><br>1. Buka browser (Chrome, Firefox, Edge)<br>2. Ketik keyword/kata kunci<br>3. Tekan Enter<br>4. Pilih hasil yang relevan<br><br><strong>Tips Pencarian Efektif:</strong><br>• Gunakan <strong>\"tanda kutip\"</strong> → cari frase exact<br>  Contoh: \"teknologi informasi\"<br><br>• Gunakan <strong>-minus</strong> → exclude kata<br>  Contoh: jaguar -mobil (cari hewan, bukan mobil)<br><br>• Gunakan <strong>site:</strong> → cari di website tertentu<br>  Contoh: site:bsi.ac.id PTIK<br><br>• Gunakan <strong>filetype:</strong> → cari jenis file<br>  Contoh: filetype:pdf panduan PTIK<br><br><strong>Bukan Search Engine:</strong><br>• <strong>Modem</strong> = Perangkat koneksi internet 📡<br>• <strong>Browser</strong> = Software untuk buka website 🌐<br>• <strong>Printer</strong> = Cetak dokumen 🖨️<br><br>💡 Google memproses 8.5 MILIAR pencarian per hari!"
+    explanation: "Berdasarkan Pertemuan 1: 'Pengertian Teknologi Informasi Menurut Haaq dan Keen : Seperangkat alat yang membantu bekerja dengan informasi dan melakukan tugas-tugas yang berhubungan dengan pemrosesan informasi.'"
   },
   {
     id: 50,
-    category: "Internet & Email",
-    question: "WWW (World Wide Web) awalnya dikembangkan pada tahun 1990 di…",
-    options: ["MIT (Massachusetts Institute of Technology)", "CERN (Laboratorium Fisika Partikel)", "NASA", "Microsoft"],
+    category: "Teknologi Informasi",
+    question: "Contoh penerapan Teknologi Informasi di bidang PENDIDIKAN adalah…",
+    options: [
+      "E-Commerce",
+      "E-Learning untuk pembelajaran jarak jauh", 
+      "ATM",
+      "Smart card kesehatan"
+    ],
     answer: 1,
-    explanation: "WWW dikembangkan oleh Tim Berners-Lee pada tahun 1990 di CERN (Laboratorium Fisika Partikel) di Swiss untuk berbagi informasi antar peneliti. <br><br><strong>🌍 Analogi:</strong> WWW seperti PERPUSTAKAAN DUNIA yang terhubung:<br><br><strong>World Wide Web (WWW) - dari materi PTIK:</strong><br><br><strong>Sejarah:</strong><br>• Tahun: <strong>1990</strong><br>• Tempat: <strong>CERN, Swiss</strong> (Laboratorium Fisika Partikel)<br>• Creator: Tim Berners-Lee (Bapak WWW) 🎖️<br>• Tujuan: Berbagi dokumen penelitian antar scientist<br><br><strong>2 Kelebihan WWW:</strong><br><br>1️⃣ <strong>Multimedia Interaktif</strong> 🎨<br>   → Tampilkan gambar, suara, video, teks<br>   → User-friendly interface<br>   → Tidak hanya teks hitam-putih<br><br>2️⃣ <strong>Hypertext</strong> 🔗<br>   → Link menghubungkan dokumen ke dokumen<br>   → Klik link → lompat ke halaman lain<br>   → Menggunakan HTML (HyperText Markup Language)<br><br><strong>Julukan WWW:</strong><br>• <strong>'The Killer Application'</strong> → Aplikasi yang mengubah dunia!<br>• <strong>'The world is at your fingertip'</strong> → Dunia di ujung jari<br>  → Informasi mudah diakses<br>  → Bukan hanya teks, tapi multimedia!<br><br><strong>Kemudahan WWW:</strong><br>✅ Pesan/beli barang online<br>✅ Daftar kuliah online<br>✅ Multimedia (gambar, video, audio)<br>✅ E-commerce, E-learning, E-government<br><br><strong>Browser Pertama:</strong><br>• <strong>Mosaic (1993)</strong> → Browser pertama dengan GUI<br>  → Dikembangkan oleh NCSA<br>  → Menggunakan konsep GUI (Graphical User Interface)<br><br><strong>Evolusi:</strong><br>1990: WWW lahir di CERN<br>↓<br>1993: Mosaic browser (GUI pertama)<br>↓<br>1995: Netscape Navigator<br>↓<br>2000s: Internet Explorer, Firefox<br>↓<br>2024: Chrome, Edge, Safari (modern browsers)<br><br>💡 Tanpa CERN & Tim Berners-Lee, tidak ada Google, Facebook, YouTube hari ini!"
+    explanation: "Berdasarkan Pertemuan 1: 'Bidang Pendidikan - Teknologi pembelajaran terus mengalami perkembangan ... Internet merupakan alat komunikasi yang murah dimana memungkinkan terjadinya interaksi antara dua orang atau lebih. Kemampuan dan karakteristik internet memungkinkan terjadinya proses belajar mengajar jarak jauh (E- Learning) menjadi lebih efektif dan efisien'"
   }
 ];
+
+// Fungsi untuk menampilkan soal
+function displayQuestion(questionId) {
+    const question = QUESTIONS.find(q => q.id === questionId);
+    if (question) {
+        console.log(`Soal ${question.id}: ${question.question}`);
+        question.options.forEach((option, index) => {
+            console.log(`${index}. ${option}`);
+        });
+        console.log(`Jawaban: ${question.answer} - ${question.options[question.answer]}`);
+        console.log(`Penjelasan: ${question.explanation}`);
+        console.log("---");
+    }
+}
+
+// Ekspor untuk penggunaan di file lain
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { QUESTIONS, displayQuestion };
+}
